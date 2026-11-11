@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<meta
+			name="description"
+			content="Стройматериалы напрямую от производителя. Доставка по России, производство и строительные услуги."
+		/>
+		<title>Брус & Камень — стройматериалы и услуги</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Oswald:wght@500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<header class="header">
+			<a class="brand" href="#home"
+				><span class="brand-mark">БК</span
+				><span
+					>БРУС <i>&</i> КАМЕНЬ<small>строительные материалы</small></span
+				></a
+			>
+			<nav>
+				<a href="#about">О компании</a><a href="#services">Услуги</a
+				><a href="#catalog">Каталог</a><a href="#contacts">Контакты</a>
+			</nav>
+			<button class="cart-button" id="cartOpen">
+				Корзина <b id="cartCount">0</b></button
+			><button class="menu-toggle" aria-label="Меню">☰</button>
+		</header>
+		<main id="home">
+			<section class="hero">
+				<div class="hero-content">
+					<p class="eyebrow">СВОЁ ПРОИЗВОДСТВО · ДОСТАВКА ПО РОССИИ</p>
+					<h1>Строим надёжно.<br /><em>Поставляем вовремя.</em></h1>
+					<p class="hero-copy">
+						Стройматериалы для дома и больших проектов. Честная цена от
+						производителя и команда, которая отвечает за результат.
+					</p>
+					<div class="actions">
+						<button class="button primary" data-modal>
+							Получить консультацию <span>↗</span></button
+						><a class="button outline" href="#catalog">Смотреть каталог</a>
+					</div>
+					<div class="hero-note">
+						<span class="note-icon">✓</span> Рассчитаем объём и доставку за 15
+						минут
+					</div>
+				</div>
+				<div class="hero-picture">
+					<img
+						src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1400&q=85"
+						alt="Современный загородный дом из качественных материалов"
+					/>
+					<div class="picture-label">
+						<strong>12 лет</strong
+						><span>работаем для вашего строительства</span>
+					</div>
+					<div class="picture-number">01 <i>—</i> 04</div>
+				</div>
+				<div class="hero-bottom">
+					<span>НАДЁЖНЫЕ МАТЕРИАЛЫ</span><span>ПОНЯТНЫЕ ЦЕНЫ</span
+					><span>ТОЧНАЯ ДОСТАВКА</span>
+				</div>
+			</section>
+			<section class="about section" id="about">
+				<div class="section-intro">
+					<p class="eyebrow">ПОЧЕМУ ВЫБИРАЮТ НАС</p>
+					<h2>Ваш надёжный<br />партнёр в строительстве</h2>
+				</div>
+				<div class="about-copy">
+					<p>
+						Мы знаем стройку изнутри: производим материалы, подбираем решения и
+						довозим заказ до объекта. Без лишних посредников и неприятных
+						сюрпризов.
+					</p>
+					<a href="#contacts" class="text-link"
+						>Познакомиться с нами <span>↗</span></a
+					>
+				</div>
+				<div class="stats">
+					<div>
+						<strong>12<span>+</span></strong
+						><small>лет на рынке</small>
+					</div>
+					<div><strong>4 800</strong><small>выполненных заказов</small></div>
+					<div><strong>87</strong><small>городов доставки</small></div>
+					<div>
+						<strong>100<span>%</span></strong
+						><small>контроль качества</small>
+					</div>
+				</div>
+			</section>
+			<section class="services section" id="services">
+				<div class="section-heading">
+					<div>
+						<p class="eyebrow">ЧЕМ ПОМОЖЕМ</p>
+						<h2>Услуги и работы</h2>
+					</div>
+					<p>
+						От первой консультации до последнего самореза — берём на себя важные
+						задачи.
+					</p>
+				</div>
+				<div class="service-list">
+					<article>
+						<span>01</span>
+						<h3>Производство стройматериалов</h3>
+						<p>Изготовим партию под ваш проект и параметры</p>
+						<b>от 2 500 ₽</b
+						><a href="#contacts" aria-label="Запросить производство">↗</a>
+					</article>
+					<article>
+						<span>02</span>
+						<h3>Доставка по России</h3>
+						<p>Подберём транспорт и согласуем удобное время</p>
+						<b>от 3 000 ₽</b
+						><a href="#contacts" aria-label="Запросить доставку">↗</a>
+					</article>
+					<article>
+						<span>03</span>
+						<h3>Расчёт материалов</h3>
+						<p>Поможем избежать лишних закупок и расходов</p>
+						<b>Бесплатно</b
+						><a href="#contacts" aria-label="Запросить расчет">↗</a>
+					</article>
+					<article>
+						<span>04</span>
+						<h3>Погрузка и разгрузка</h3>
+						<p>Аккуратно подготовим заказ к отправке</p>
+						<b>от 1 500 ₽</b
+						><a href="#contacts" aria-label="Запросить погрузку">↗</a>
+					</article>
+				</div>
+				<div class="center">
+					<button class="button dark" data-modal>
+						Обсудить задачу <span>↗</span>
+					</button>
+				</div>
+			</section>
+			<section class="catalog section" id="catalog">
+				<div class="section-heading">
+					<div>
+						<p class="eyebrow">ПРОВЕРЕНО НА ПРАКТИКЕ</p>
+						<h2>Популярные товары</h2>
+					</div>
+					<a href="#catalog" class="text-link">Весь каталог <span>↗</span></a>
+				</div>
+				<div class="filters">
+					<button class="filter active" data-filter="Все">Все товары</button
+					><button class="filter" data-filter="Пиломатериалы">
+						Пиломатериалы</button
+					><button class="filter" data-filter="Блоки">Блоки</button
+					><button class="filter" data-filter="Смеси">Смеси</button>
+				</div>
+				<div class="products" id="products"></div>
+				<div class="catalog-foot">
+					<span>10 позиций · цены с НДС</span
+					><button class="button primary" data-modal>
+						Оставить заявку <span>↗</span>
+					</button>
+				</div>
+			</section>
+			<section class="contact section" id="contacts">
+				<div class="contact-info">
+					<p class="eyebrow">ДАВАЙТЕ ОБСУДИМ ПРОЕКТ</p>
+					<h2>Строительство<br />начинается<br /><em>с разговора.</em></h2>
+					<p>
+						Оставьте контакты — специалист свяжется с вами и поможет
+						сориентироваться по материалам и стоимости.
+					</p>
+					<div class="contact-detail">
+						<small>ПОЗВОНИТЕ НАМ</small
+						><a href="tel:+78005553535">8 800 555-35-35</a>
+					</div>
+					<div class="contact-detail">
+						<small>МЫ НАХОДИМСЯ</small
+						><span>Казань, ул. Производственная, 18</span>
+					</div>
+				</div>
+				<form class="lead-form">
+					<h3>Получить консультацию</h3>
+					<p>Ответим в течение рабочего дня</p>
+					<label
+						>Ваше имя<input
+							required
+							name="name"
+							placeholder="Как к вам обращаться?" /></label
+					><label
+						>Номер телефона<input
+							required
+							name="phone"
+							type="tel"
+							placeholder="+7 (___) ___-__-__" /></label
+					><label
+						>Что вас интересует?<textarea
+							name="message"
+							rows="3"
+							placeholder="Расскажите о задаче"
+						></textarea></label
+					><button class="button primary" type="submit">
+						Отправить заявку <span>↗</span></button
+					><small
+						>Нажимая кнопку, вы соглашаетесь на обработку персональных
+						данных.</small
+					>
+				</form>
+			</section>
+			<section class="map-section">
+				<div class="map-copy">
+					<p class="eyebrow">ПРИЕЗЖАЙТЕ В ГОСТИ</p>
+					<h2>Всегда рады<br />личной встрече</h2>
+					<p>Казань, ул. Производственная, 18<br />Пн–Сб, 8:00–19:00</p>
+					<a
+						class="text-link"
+						target="_blank"
+						href="https://maps.google.com/?q=Казань+Производственная+18"
+						>Построить маршрут ↗</a
+					>
+				</div>
+				<iframe
+					title="Карта: Казань, улица Производственная, 18"
+					src="https://maps.google.com/maps?q=Kazan%20ulitsa%20Proizvodstvennaya%2018&t=&z=13&ie=UTF8&iwloc=&output=embed"
+					loading="lazy"
+				></iframe>
+			</section>
+		</main>
+		<footer>
+			<a class="brand" href="#home"
+				><span class="brand-mark">БК</span
+				><span
+					>БРУС <i>&</i> КАМЕНЬ<small>строительные материалы</small></span
+				></a
+			><span>© 2026 Брус & Камень</span
+			><a href="#contacts">Политика конфиденциальности</a>
+		</footer>
+		<div class="modal" id="modal">
+			<div class="modal-backdrop" data-close></div>
+			<form class="modal-box lead-form">
+				<button class="close" type="button" data-close>×</button>
+				<p class="eyebrow">ОТВЕТИМ НА ВАШИ ВОПРОСЫ</p>
+				<h3>Получить консультацию</h3>
+				<label
+					>Ваше имя<input
+						required
+						name="name"
+						placeholder="Как к вам обращаться?" /></label
+				><label
+					>Номер телефона<input
+						required
+						name="phone"
+						type="tel"
+						placeholder="+7 (___) ___-__-__" /></label
+				><label
+					>Сообщение<textarea
+						name="message"
+						rows="3"
+						placeholder="Что вы планируете приобрести?"
+					></textarea></label
+				><button class="button primary" type="submit">
+					Отправить заявку <span>↗</span></button
+				><small
+					>Нажимая кнопку, вы соглашаетесь на обработку персональных
+					данных.</small
+				>
+			</form>
+		</div>
+		<aside class="cart-drawer" id="cart">
+			<div class="cart-head">
+				<h3>Ваша корзина</h3>
+				<button class="close" id="cartClose">×</button>
+			</div>
+			<div id="cartItems"></div>
+			<div class="cart-total"><span>Итого</span><b id="cartTotal">0 ₽</b></div>
+			<button class="button primary" data-modal>Оформить заявку ↗</button>
+		</aside>
+		<div class="toast" id="toast">Спасибо! Заявка отправлена.</div>
+		<script src="script.js"></script>
+	</body>
+</html>
