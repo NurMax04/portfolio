@@ -3,9 +3,9 @@
   const copy = {
     kk: {
       skip: "Негізгі мазмұнға өту", navCatalog: "Каталог", navAbout: "Біз туралы", navWorks: "Жұмыстар", navContacts: "Байланыс", headerCta: "Жобаны талқылау",
-      heroEyebrow: "ШЫМКЕНТТЕ ЖАСАЛҒАН • СІЗГЕ АРНАЛҒАН", heroTitle: "Үйіңізге сай<br /><em>жиһаз.</em> Мінезі бар<br />дизайн.", heroLead: "TV-аймақтан бастап жатын бөлмеге дейін — өлшеміңізге сай жасалған жиһаз, ұқыпты орнату және бір команда.", heroCta: "Өлшеуге жазылу", heroSecondary: "Каталогты көру", proofFollowers: "TikTok-та жазылушы", proofLikes: "Нақты жұмыстар мен пікірлер", heroImageLabel: "ОРЫНДАЛҒАН ЖОБА", heroNoteTop: "Тапсырыспен жасалған интерьер", heroNoteBottom: "Бір бөлшектен толық кеңістікке дейін", heroBottomLeft: "ЖИҺАЗ • ДИЗАЙН • ОРНАТУ", scroll: "ТӨМЕН ЖЫЛЖЫТУ", heroBottomRight: "ШЫМКЕНТ, ҚАЗАҚСТАН", heroVideoCaption: "КЕҢІСТІКТІ ЖОҒАРЫДАН ТӨМЕНГЕ ДЕЙІН",
-      tickerOne: "Жеке өлшем", tickerTwo: "Заманауи TV-аймақтар", tickerThree: "Жатын бөлмелер", tickerFour: "Шымкент", introKicker: "БІЗ ТУРАЛЫ", introTitle: "Әдемі көрінеді.<br /><em>Күнде ыңғайлы.</em>", introText: "Біз кеңістіктің өлшемі мен үйіңіздің ырғағын ескеріп, тапсырыспен жиһаз жасаймыз. Сіз идеяңызды айтасыз — біз оны нақты жобаға айналдырамыз.", featureOneTitle: "Өлшем бойынша", featureOneText: "Жиһаз сіздің бөлмеңізге және жоспарыңызға сай жобаланады.", featureTwoTitle: "Бір команда", featureTwoText: "Жобаны келісуден бастап орнатуға дейін бір байланыс нүктесі.", featureThreeTitle: "Ұқыпты жинақ", featureThreeText: "Әр элементті біріктіріп, дайын интерьер ретінде тапсырамыз.", aboutPhotoAlt: "Макетке арналған уақытша негізін қалаушы портреті", aboutPhotoTag: "МАКЕТКЕ АРНАЛҒАН УАҚЫТША ПОРТРЕТ", aboutTitle: "Идеядан бастаймыз.<br /><em>Жиһазбен жалғастырамыз.</em>", aboutText: "HIT STROI — үйге сай жиһазды өлшеп, жобалап, орнатып беретін Шымкент командасы. Әр жоба сіздің идеяңыздан басталып, дайын кеңістікке дейін бірге жасалады.", aboutSince: "Шымкентте жұмысты бастаған жыл", aboutProjects: "аяқталған жоба", aboutDraftNote: "Жыл мен жоба саны — уақытша мысал, тапсырыс берушімен нақтылау керек.", aboutCta: "Біз туралы сұрау",
-      worksKicker: "ОРЫНДАЛҒАН ЖҰМЫСТАР", worksTitle: "Әр бөлшек<br /><em>маңызды.</em>", worksText: "Біздің жұмыстарды қарап, өз үйіңізге ұнайтын шешімді таңдаңыз.", worksLink: "TikTok-тағы барлық видео", workTagOne: "TV-АЙМАҚ", workOne: "Жарық. Таза сызықтар.", workTagTwo: "LUX TV-АЙМАҚ", workTwo: "Интерьердің орталығы.", workTagThree: "КІРЕБЕРІС", workThree: "Ұқыпты сақтау орны.", catalogKicker: "КАТАЛОГ", catalogTitle: "Кеңістікке сай<br /><em>санатты таңдаңыз.</em>", catalogText: "Әр бөлімнен ұнаған үлгіні таңдап, қолжетімді өлшемдер мен бағаны біліңіз.", categoryType: "САНАТ", categoryGroup: "Жиһаз санаттары", conceptBadge: "ТҰЖЫРЫМДАМАЛЫҚ КӨРНЕК", categoryTv: "TV-аймақтар", categoryBedroom: "Жатын бөлмелер", categoryHallway: "Кіреберістер", categoryMirror: "Айналар", categoryWardrobe: "Шкафтар", filterAll: "Барлығы", filterTv: "TV-аймақ", filterBedroom: "Жатын бөлме", filterHallway: "Кіреберіс", filterMirror: "Айна", filterWardrobe: "Шкаф", catalogNote: "Каталогтағы бағалар бастапқы үлгілерге арналған. Нақты баға өлшем, материал және жобаға қарай есептеледі.", catalogAsk: "Есептеп көру", catalogNoteClose: "Ескертуді жасыру",
+      heroEyebrow: "ШЫМКЕНТТЕ ЖАСАЛҒАН • СІЗГЕ АРНАЛҒАН", heroTitle: "Үйіңізге сай<br /><em>жиһаз.</em> Мінезі бар<br />дизайн.", heroLead: "TV зонадан бастап жатын бөлмеге дейін — өлшеміңізге сай жасалған жиһаз, ұқыпты орнату және бір команда.", heroCta: "Өлшеуге жазылу", heroSecondary: "Каталогты көру", proofFollowers: "TikTok-та жазылушы", proofLikes: "Нақты жұмыстар мен пікірлер", heroImageLabel: "ОРЫНДАЛҒАН ЖОБА", heroNoteTop: "Тапсырыспен жасалған интерьер", heroNoteBottom: "Бір бөлшектен толық кеңістікке дейін", heroBottomLeft: "ЖИҺАЗ • ДИЗАЙН • ОРНАТУ", scroll: "ТӨМЕН ЖЫЛЖЫТУ", heroBottomRight: "ШЫМКЕНТ, ҚАЗАҚСТАН", heroVideoCaption: "КЕҢІСТІКТІ ЖОҒАРЫДАН ТӨМЕНГЕ ДЕЙІН",
+      tickerOne: "Жеке өлшем", tickerTwo: "Заманауи TV зоналар", tickerThree: "Жатын бөлмелер", tickerFour: "Шымкент", introKicker: "БІЗ ТУРАЛЫ", introTitle: "Әдемі көрінеді.<br /><em>Күнде ыңғайлы.</em>", introText: "Біз кеңістіктің өлшемі мен үйіңіздің ырғағын ескеріп, тапсырыспен жиһаз жасаймыз. Сіз идеяңызды айтасыз — біз оны нақты жобаға айналдырамыз.", featureOneTitle: "Өлшем бойынша", featureOneText: "Жиһаз сіздің бөлмеңізге және жоспарыңызға сай жобаланады.", featureTwoTitle: "Бір команда", featureTwoText: "Жобаны келісуден бастап орнатуға дейін бір байланыс нүктесі.", featureThreeTitle: "Ұқыпты жинақ", featureThreeText: "Әр элементті біріктіріп, дайын интерьер ретінде тапсырамыз.", aboutPhotoAlt: "Макетке арналған уақытша негізін қалаушы портреті", aboutPhotoTag: "МАКЕТКЕ АРНАЛҒАН УАҚЫТША ПОРТРЕТ", aboutTitle: "Идеядан бастаймыз.<br /><em>Жиһазбен жалғастырамыз.</em>", aboutText: "HIT STROI — үйге сай жиһазды өлшеп, жобалап, орнатып беретін Шымкент командасы. Әр жоба сіздің идеяңыздан басталып, дайын кеңістікке дейін бірге жасалады.", aboutSince: "Шымкентте жұмысты бастаған жыл", aboutProjects: "аяқталған жоба", aboutDraftNote: "Жыл мен жоба саны — уақытша мысал, тапсырыс берушімен нақтылау керек.", aboutCta: "Біз туралы сұрау",
+      worksKicker: "ОРЫНДАЛҒАН ЖҰМЫСТАР", worksTitle: "Әр бөлшек<br /><em>маңызды.</em>", worksText: "Біздің жұмыстарды қарап, өз үйіңізге ұнайтын шешімді таңдаңыз.", worksLink: "TikTok-тағы барлық видео", workTagOne: "TV ЗОНА", workOne: "Жарық. Таза сызықтар.", workTagTwo: "LUX TV ЗОНА", workTwo: "Интерьердің орталығы.", workTagThree: "КІРЕБЕРІС", workThree: "Ұқыпты сақтау орны.", catalogKicker: "КАТАЛОГ", catalogTitle: "Кеңістікке сай<br /><em>санатты таңдаңыз.</em>", catalogText: "Әр бөлімнен ұнаған үлгіні таңдап, қолжетімді өлшемдер мен бағаны біліңіз.", categoryType: "САНАТ", categoryGroup: "Жиһаз санаттары", conceptBadge: "ТҰЖЫРЫМДАМАЛЫҚ КӨРНЕК", categoryTv: "TV зоналар", categoryBedroom: "Жатын бөлмелер", categoryHallway: "Кіреберістер", categoryMirror: "Айналар", categoryWardrobe: "Шкафтар", filterAll: "Барлығы", filterTv: "TV зона", filterBedroom: "Жатын бөлме", filterHallway: "Кіреберіс", filterMirror: "Айна", filterWardrobe: "Шкаф", catalogNote: "Каталогтағы бағалар бастапқы үлгілерге арналған. Нақты баға өлшем, материал және жобаға қарай есептеледі.", catalogAsk: "Есептеп көру", catalogNoteClose: "Ескертуді жасыру",
       priceAsk: "Бағасын сұрау", from: "бастап", priceOnRequest: "Бағасын нақтылау", itemCount: "үлгі", emptyCatalog: "Бұл бөлімде әзірге үлгі жоқ.", orderProduct: "Осы үлгіге тапсырыс беру", waProduct: "Сәлеметсіз бе! Сайттағы «{name}» үлгісіне тапсырыс беру шарттарын талқылағым келеді.",
       contactKicker: "БАЙЛАНЫС", contactTitle: "Жаңа үйге<br /><em>жаңа шешім.</em>", contactText: "Өлшеміңізді, идеяңызды немесе шабыт суретін жіберіңіз. Жобаны бірге бастайық.", contactCta: "WhatsApp-та жазу", phoneLabel: "ТЕЛЕФОН / WHATSAPP", locationLabel: "ҚЫЗМЕТ КӨРСЕТУ АЙМАҒЫ", locationValue: "Шымкент • Түркістан • Тараз", footerCopy: "Жиһазды тапсырыспен жасау • Шымкент", backTop: "БАСЫНА"
     },
@@ -32,7 +32,7 @@
     catalogTitle: "Выберите категорию<br /><em>для вашего дома.</em>", catalogText: "Нажмите на категорию, чтобы открыть модели, описания и цены.", modalKicker: "КАТАЛОГ МОДЕЛЕЙ", modalAllTitle: "Все модели", closeCatalog: "Закрыть каталог", catalogFilterLabel: "Категории каталога", productCta: "Обсудить детали"
   });
   Object.assign(copy.kk, {
-    navReviews: "Пікірлер", reviewsKicker: "ПІКІРЛЕР", reviewsTitle: "Клиенттер<br /><em>не дейді?</em>", reviewsText: "Фото мен видео-пікірлер. Жұлдызсыз — тек клиенттердің өз сөздері.", reviewPhotoLabel: "ФОТО МАКЕТІ", reviewVideoLabel: "ВИДЕО МАКЕТІ", reviewImageAltOne: "TV-аймақ жобасының уақытша суреті", reviewImageAltTwo: "Кіреберіс жобасының уақытша суреті", reviewPlaceholder: "Бұл жерде клиенттің нақты пікірі болады. Мәтінді кейін тапсырыс берушімен толтырамыз.", reviewClient: "Клиент пікірі", reviewDraft: "Уақытша мәтін", reviewsDraftNote: "Медиа мен мәтін — уақытша материалдар, оларды ауыстыру керек.", reviewsPause: "Пауза", reviewsResume: "Жалғастыру", reviewsPrev: "Алдыңғы пікір", reviewsNext: "Келесі пікір"
+    navReviews: "Пікірлер", reviewsKicker: "ПІКІРЛЕР", reviewsTitle: "Клиенттер<br /><em>не дейді?</em>", reviewsText: "Фото мен видео-пікірлер. Жұлдызсыз — тек клиенттердің өз сөздері.", reviewPhotoLabel: "ФОТО МАКЕТІ", reviewVideoLabel: "ВИДЕО МАКЕТІ", reviewImageAltOne: "TV зона жобасының уақытша суреті", reviewImageAltTwo: "Кіреберіс жобасының уақытша суреті", reviewPlaceholder: "Бұл жерде клиенттің нақты пікірі болады. Мәтінді кейін тапсырыс берушімен толтырамыз.", reviewClient: "Клиент пікірі", reviewDraft: "Уақытша мәтін", reviewsDraftNote: "Медиа мен мәтін — уақытша материалдар, оларды ауыстыру керек.", reviewsPause: "Пауза", reviewsResume: "Жалғастыру", reviewsPrev: "Алдыңғы пікір", reviewsNext: "Келесі пікір"
   });
   Object.assign(copy.ru, {
     navReviews: "Отзывы", reviewsKicker: "ОТЗЫВЫ", reviewsTitle: "Что говорят<br /><em>клиенты?</em>", reviewsText: "Фото- и видеоотзывы без рейтингов — только слова клиентов.", reviewPhotoLabel: "ФОТО-МАКЕТ", reviewVideoLabel: "ВИДЕО-МАКЕТ", reviewImageAltOne: "Временное фото проекта TV-зоны", reviewImageAltTwo: "Временное фото проекта прихожей", reviewPlaceholder: "Здесь будет настоящий отзыв клиента. Текст добавим после согласования.", reviewClient: "Отзыв клиента", reviewDraft: "Временный текст", reviewsDraftNote: "Медиа и тексты временные — заменим на настоящие отзывы.", reviewsPause: "Пауза", reviewsResume: "Продолжить", reviewsPrev: "Предыдущий отзыв", reviewsNext: "Следующий отзыв"
@@ -47,6 +47,7 @@
   const categoryCards = Array.from(document.querySelectorAll(".category-card"));
   const countLabel = document.getElementById("catalog-count");
   const catalogModal = document.getElementById("catalog-modal");
+  const catalogModalInner = document.querySelector(".catalog-modal-inner");
   const catalogModalTitle = document.getElementById("catalog-modal-title");
   const productDetail = document.getElementById("product-detail");
   const catalogModalCloseButton = document.querySelector(".catalog-modal-close");
@@ -73,6 +74,9 @@
     if (!productGrid) return;
     productGrid.hidden = false;
     productDetail.hidden = true;
+    productDetail.classList.remove("product-detail-sheet");
+    catalogModalInner?.classList.remove("is-product-open");
+    productGrid.querySelectorAll(".product-card.is-open").forEach((card) => card.classList.remove("is-open"));
     if (catalogNote) catalogNote.hidden = catalogNoteDismissed;
     countLabel.hidden = false;
     selectedProduct = null;
@@ -96,10 +100,22 @@
   function openProductDetail(product) {
     selectedProduct = product;
     selectedProductImage = 0;
-    productGrid.hidden = true;
+    const useBottomSheet = window.matchMedia("(max-width: 720px)").matches;
+    productGrid.hidden = !useBottomSheet;
     productDetail.hidden = false;
+    productDetail.classList.toggle("product-detail-sheet", useBottomSheet);
+    catalogModalInner?.classList.toggle("is-product-open", useBottomSheet);
+    productGrid.querySelectorAll(".product-card.is-open").forEach((card) => card.classList.remove("is-open"));
+    if (useBottomSheet) {
+      const selectedCard = productGrid.querySelector(`[data-product-id="${product.id}"]`);
+      if (selectedCard) {
+        const gridTop = productGrid.getBoundingClientRect().top;
+        const cardTop = selectedCard.getBoundingClientRect().top;
+        productGrid.scrollTop += cardTop - gridTop;
+        selectedCard.classList.add("is-open");
+      }
+    }
     document.querySelector(".catalog-note")?.setAttribute("hidden", "");
-    catalogModalCloseButton?.setAttribute("aria-label", language === "kk" ? "Тауарлар тізіміне қайту" : "Назад к списку товаров");
     countLabel.hidden = true;
     catalogModalTitle.textContent = product.name[language];
     renderProductDetail();
@@ -115,12 +131,15 @@
     const waLink = "https://wa.me/77087211565?text=" + encodeURIComponent(waText);
     const activeImage = images[selectedProductImage] || images[0];
     const features = product.features?.[language] || [];
-    productDetail.innerHTML = `<div class="product-detail-gallery">
+    const isBottomSheet = productDetail.classList.contains("product-detail-sheet");
+    const closeButton = `<button class="product-detail-close" type="button" data-product-detail-close aria-label="${language === "kk" ? "Тауарлар тізіміне қайту" : "Назад к списку товаров"}"><svg class="icon-svg" aria-hidden="true" focusable="false"><use href="#icon-close"></use></svg></button>`;
+    productDetail.innerHTML = `${isBottomSheet ? closeButton : ""}<div class="product-detail-gallery">
       <div class="product-detail-main"><img src="assets/images/${activeImage.src}" alt="${activeImage.alt[language]}" /><span class="product-image-count">${String(selectedProductImage + 1).padStart(2, "0")} / ${String(images.length).padStart(2, "0")}</span></div>
       <div class="product-detail-thumbnails" aria-label="${language === "kk" ? "Өнім фотолары" : "Фотографии товара"}">
         ${images.map((image, index) => `<button class="product-thumbnail${index === selectedProductImage ? " is-active" : ""}" type="button" data-product-image="${index}" aria-label="${language === "kk" ? "Фото" : "Фото"} ${index + 1}" aria-pressed="${index === selectedProductImage}"><img src="assets/images/${image.src}" alt="${image.alt[language]}" /></button>`).join("")}
       </div>
     </div><div class="product-detail-info">
+      ${isBottomSheet ? "" : closeButton}
       <p class="product-detail-kicker">${categoryName(product.category)}</p>
       <h3>${product.name[language]}</h3>
       <p class="product-detail-description">${product.details[language]}</p>
@@ -137,7 +156,7 @@
 
   function categoryName(category) {
     const labels = {
-      tv: { kk: "TV-АЙМАҚ", ru: "TV-ЗОНА" }, bedroom: { kk: "ЖАТЫН БӨЛМЕ", ru: "СПАЛЬНЯ" },
+      tv: { kk: "TV ЗОНА", ru: "TV-ЗОНА" }, bedroom: { kk: "ЖАТЫН БӨЛМЕ", ru: "СПАЛЬНЯ" },
       hallway: { kk: "КІРЕБЕРІС", ru: "ПРИХОЖАЯ" }, mirror: { kk: "АЙНА", ru: "ЗЕРКАЛО" }, wardrobe: { kk: "ШКАФ", ru: "ШКАФ" }
     };
     return labels[category][language];
@@ -238,6 +257,10 @@
     if (product) openProductDetail(product);
   });
   productDetail?.addEventListener("click", (event) => {
+    if (event.target.closest("[data-product-detail-close]")) {
+      renderCatalog();
+      return;
+    }
     const thumbnail = event.target.closest("[data-product-image]");
     if (!thumbnail || !selectedProduct) return;
     selectedProductImage = Number(thumbnail.dataset.productImage);
@@ -285,10 +308,7 @@
   });
   startReviewsAutoplay();
 
-  catalogModalCloseButton?.addEventListener("click", () => {
-    if (selectedProduct) renderCatalog();
-    else catalogModal?.close();
-  });
+  catalogModalCloseButton?.addEventListener("click", () => catalogModal?.close());
   catalogModal?.addEventListener("close", () => {
     document.documentElement.classList.remove("catalog-open");
     document.body.classList.remove("catalog-open");
