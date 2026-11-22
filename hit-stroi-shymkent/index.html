@@ -1,197 +1,902 @@
 <!doctype html>
 <html lang="kk">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#0b1115" />
-    <meta name="description" content="HIT STROI SHYMKENT — мебель на заказ: TV-зоны, спальни, шкафы, прихожие и зеркала. Замер и заказ через WhatsApp." />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="HIT STROI — Мебель на заказ в Шымкенте" />
-    <meta property="og:description" content="TV-зоны, спальные зоны, шкафы, прихожие и зеркала по вашим размерам." />
-    <title>HIT STROI — Мебель на заказ в Шымкенте</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <link rel="icon" href="assets/images/hit-stroi-logo.png" />
-    <link rel="stylesheet" href="assets/css/site.css" />
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "FurnitureStore",
-        "name": "HIT STROI SHYMKENT",
-        "telephone": "+77087211565",
-        "description": "Мебель на заказ: TV-зоны, спальные зоны, шкафы, прихожие и зеркала.",
-        "areaServed": ["Шымкент", "Түркістан", "Тараз"],
-        "sameAs": ["https://www.tiktok.com/@hit_stroi_shym"]
-      }
-    </script>
-    <script defer src="data/catalog.js"></script>
-    <script defer src="assets/js/site.js"></script>
-  </head>
-  <body>
-    <svg class="svg-sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
-      <symbol id="arrow-up-right" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" /></symbol>
-      <symbol id="arrow-down-right" viewBox="0 0 24 24"><path d="m7 7 10 10m0-9v9H8" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" /></symbol>
-      <symbol id="arrow-down" viewBox="0 0 24 24"><path d="M12 4v15m-7-7 7 7 7-7" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" /></symbol>
-      <symbol id="arrow-up" viewBox="0 0 24 24"><path d="M12 20V5m-7 7 7-7 7 7" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" /></symbol>
-      <symbol id="icon-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" /></symbol>
-    </svg>
-    <a class="skip-link" href="#main" data-i18n="skip">Негізгі мазмұнға өту</a>
-    <header class="site-header" id="top">
-      <div class="header-inner wrap">
-        <a class="brand" href="#top" aria-label="HIT STROI, главная">
-          <img src="assets/images/hit-stroi-logo.png" alt="HIT STROI SHYMKENT" />
-          <span class="brand-copy"><b>HIT STROI</b><small>SHYMKENT</small></span>
-        </a>
-        <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="main-nav"><span></span><span></span></button>
-        <nav class="main-nav" id="main-nav" aria-label="Главная навигация">
-          <a href="#catalog" data-i18n="navCatalog">Каталог</a>
-          <a href="#about" data-i18n="navAbout">О нас</a>
-          <a href="#process" data-i18n="navProcess">Қалай жұмыс істейміз</a>
-          <a href="#contacts" data-i18n="navContacts">Контакты</a>
-        </nav>
-        <div class="header-actions">
-          <div class="language-switch" aria-label="Тіл таңдау">
-            <button type="button" class="lang-button is-active" data-lang="kk" aria-pressed="true">KZ</button>
-            <span></span>
-            <button type="button" class="lang-button" data-lang="ru" aria-pressed="false">RU</button>
-          </div>
-          <a class="button button-small button-outline header-cta" href="https://wa.me/77087211565" target="_blank" rel="noopener" data-i18n="headerCta">Жобаны талқылау</a>
-        </div>
-      </div>
-    </header>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="theme-color" content="#0b1115" />
+		<meta
+			name="description"
+			content="HIT STROI SHYMKENT — мебель на заказ: TV-зоны, спальни, шкафы, прихожие и зеркала. Замер и заказ через WhatsApp."
+		/>
+		<meta property="og:type" content="website" />
+		<meta
+			property="og:title"
+			content="HIT STROI — Мебель на заказ в Шымкенте"
+		/>
+		<meta
+			property="og:description"
+			content="TV-зоны, спальные зоны, шкафы, прихожие и зеркала по вашим размерам."
+		/>
+		<title>HIT STROI — Мебель на заказ в Шымкенте</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="icon" type="image/svg+xml" href="assets/images/hit-stroi-favicon.svg" />
+    <link rel="alternate icon" type="image/png" href="assets/images/hit-stroi-logo.png" />
+		<link rel="stylesheet" href="assets/css/site.css" />
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "FurnitureStore",
+				"name": "HIT STROI SHYMKENT",
+				"telephone": "+77087211565",
+				"description": "Мебель на заказ: TV-зоны, спальные зоны, шкафы, прихожие и зеркала.",
+				"areaServed": ["Шымкент", "Түркістан", "Тараз"],
+				"sameAs": ["https://www.tiktok.com/@hit_stroi_shym"]
+			}
+		</script>
+		<script defer src="data/catalog.js"></script>
+		<script defer src="assets/js/site.js"></script>
+	</head>
+	<body>
+		<svg
+			class="svg-sprite"
+			xmlns="http://www.w3.org/2000/svg"
+			aria-hidden="true"
+			focusable="false"
+		>
+			<symbol id="arrow-up-right" viewBox="0 0 24 24">
+				<path
+					d="M7 17 17 7M8 7h9v9"
+					fill="none"
+					stroke="currentColor"
+					stroke-width="1.75"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+				/>
+			</symbol>
+			<symbol id="arrow-down-right" viewBox="0 0 24 24">
+				<path
+					d="m7 7 10 10m0-9v9H8"
+					fill="none"
+					stroke="currentColor"
+					stroke-width="1.75"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+				/>
+			</symbol>
+			<symbol id="arrow-down" viewBox="0 0 24 24">
+				<path
+					d="M12 4v15m-7-7 7 7 7-7"
+					fill="none"
+					stroke="currentColor"
+					stroke-width="1.75"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+				/>
+			</symbol>
+			<symbol id="arrow-up" viewBox="0 0 24 24">
+				<path
+					d="M12 20V5m-7 7 7-7 7 7"
+					fill="none"
+					stroke="currentColor"
+					stroke-width="1.75"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+				/>
+			</symbol>
+			<symbol id="arrow-left" viewBox="0 0 24 24">
+				<path
+					d="M20 12H5m7-7-7 7 7 7"
+					fill="none"
+					stroke="currentColor"
+					stroke-width="1.75"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+				/>
+			</symbol>
+			<symbol id="arrow-right" viewBox="0 0 24 24">
+				<path
+					d="M4 12h15m-7-7 7 7-7 7"
+					fill="none"
+					stroke="currentColor"
+					stroke-width="1.75"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+				/>
+			</symbol>
+			<symbol id="icon-close" viewBox="0 0 24 24">
+				<path
+					d="m6 6 12 12M18 6 6 18"
+					fill="none"
+					stroke="currentColor"
+					stroke-width="1.7"
+					stroke-linecap="round"
+				/>
+			</symbol>
+			<symbol id="icon-spark" viewBox="0 0 24 24">
+				<path
+					d="M12 2.75 14.2 9.8 21.25 12l-7.05 2.2L12 21.25 9.8 14.2 2.75 12 9.8 9.8 12 2.75Z"
+					fill="currentColor"
+				/>
+				<circle cx="19.5" cy="4.5" r="1.25" fill="currentColor" />
+			</symbol>
+		</svg>
+		<a class="skip-link" href="#main" data-i18n="skip">Негізгі мазмұнға өту</a>
+		<header class="site-header" id="top">
+			<div class="header-inner wrap">
+				<a class="brand" href="#top" aria-label="HIT STROI, главная">
+					<img
+						src="assets/images/hit-stroi-logo.png"
+						alt="HIT STROI SHYMKENT"
+					/>
+					<span class="brand-copy"
+						><b>HIT STROI</b><small>SHYMKENT</small></span
+					>
+				</a>
+				<button
+					class="menu-toggle"
+					type="button"
+					aria-label="Открыть меню"
+					aria-expanded="false"
+					aria-controls="main-nav"
+				>
+					<span></span><span></span>
+				</button>
+				<nav class="main-nav" id="main-nav" aria-label="Главная навигация">
+					<a href="#catalog" data-i18n="navCatalog">Каталог</a>
+					<a href="#process" data-i18n="navProcess">Қалай жұмыс істейміз</a>
+					<a href="#about" data-i18n="navAbout">О нас</a>
+					<a href="#reviews" data-i18n="navReviews">Отзывы</a>
+					<a href="#contacts" data-i18n="navContacts">Контакты</a>
+				</nav>
+				<div class="header-actions">
+					<div class="language-switch" aria-label="Тіл таңдау">
+						<button
+							type="button"
+							class="lang-button is-active"
+							data-lang="kk"
+							aria-pressed="true"
+						>
+							KZ
+						</button>
+						<span></span>
+						<button
+							type="button"
+							class="lang-button"
+							data-lang="ru"
+							aria-pressed="false"
+						>
+							RU
+						</button>
+					</div>
+					<a
+						class="button button-small button-outline header-cta"
+						href="https://wa.me/77087211565"
+						target="_blank"
+						rel="noopener"
+						data-i18n="headerCta"
+						>Жобаны талқылау</a
+					>
+				</div>
+			</div>
+		</header>
 
-    <main id="main">
-      <section class="hero hero-cinema section-dark">
-        <div class="hero-media" aria-hidden="true">
-          <video class="hero-video" autoplay muted loop playsinline preload="metadata" poster="assets/images/hero-room.png">
-            <source src="assets/video/hero-room-sweep.mp4" type="video/mp4" />
-          </video>
-          <div class="hero-video-shade"></div>
-          <div class="hero-video-label"><span class="eyebrow-dot"></span><span data-i18n="heroImageLabel">ОРЫНДАЛҒАН ЖОБА</span></div>
-        </div>
-        <div class="hero-glow" aria-hidden="true"></div>
-        <div class="wrap hero-grid">
-          <div class="hero-copy">
-            <p class="eyebrow"><span class="eyebrow-dot"></span><span data-i18n="heroEyebrow">ШЫМКЕНТТЕ ЖАСАЛҒАН • СІЗГЕ АРНАЛҒАН</span></p>
-            <h1 data-i18n="heroTitle">Үйіңізге сай<br /><em>жиһаз.</em> Мінезі бар<br />дизайн.</h1>
-            <p class="hero-lead" data-i18n="heroLead">TV-аймақтан бастап жатын бөлмеге дейін — өлшеміңізге сай жасалған жиһаз, ұқыпты орнату және бір команда.</p>
-            <div class="hero-buttons">
-              <a class="button button-primary" href="https://wa.me/77087211565" target="_blank" rel="noopener"><span data-i18n="heroCta">Өлшеуге жазылу</span><svg class="button-arrow icon-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#arrow-up-right"></use></svg></a>
-              <a class="text-link" href="#catalog"><span data-i18n="heroSecondary">Каталогты көру</span><svg class="icon-svg icon-down" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#arrow-down"></use></svg></a>
-            </div>
-            <div class="hero-proof">
-              <div class="proof-avatars" aria-hidden="true"><span>H</span><span>S</span><span>+</span></div>
-              <p><strong>10,1K</strong> <span data-i18n="proofFollowers">TikTok-та жазылушы</span><br /><small data-i18n="proofLikes">Нақты жұмыстар мен пікірлер</small></p>
-            </div>
-          </div>
-          <div class="hero-aside">
-            <div class="hero-aside-note"><small data-i18n="heroNoteTop">Тапсырыспен жасалған интерьер</small><strong data-i18n="heroNoteBottom">Бір бөлшектен толық кеңістікке дейін</strong></div>
-            <div class="hero-aside-index"><span>01</span><i></i><span data-i18n="heroBottomRight">ШЫМКЕНТ, ҚАЗАҚСТАН</span></div>
-          </div>
-        </div>
-        <div class="hero-bottom wrap">
-          <span data-i18n="heroBottomLeft">ЖИҺАЗ • ДИЗАЙН • ОРНАТУ</span>
-          <span class="scroll-indicator"><span></span><span data-i18n="scroll">ТӨМЕН ЖЫЛЖЫТУ</span></span>
-          <span data-i18n="heroVideoCaption">КЕҢІСТІКТІ ЖОҒАРЫДАН ТӨМЕНГЕ ДЕЙІН</span>
-        </div>
-      </section>
+		<main id="main">
+			<section class="hero hero-cinema section-dark" id="top">
+				<div class="hero-media" aria-hidden="true">
+					<video
+						class="hero-video"
+						autoplay
+						muted
+						loop
+						playsinline
+						preload="metadata"
+						poster="assets/images/hero-room.png"
+					>
+						<source src="assets/video/hero-room-sweep.mp4" type="video/mp4" />
+					</video>
+					<div class="hero-video-shade"></div>
+					<div class="hero-video-label">
+						<span class="eyebrow-dot"></span
+						><span data-i18n="heroImageLabel">ОРЫНДАЛҒАН ЖОБА</span>
+					</div>
+				</div>
+				<div class="hero-glow" aria-hidden="true"></div>
+				<div class="wrap hero-grid">
+					<div class="hero-copy">
+						<p class="eyebrow">
+							<span class="eyebrow-dot"></span
+							><span data-i18n="heroEyebrow"
+								>ШЫМКЕНТТЕ ЖАСАЛҒАН • СІЗГЕ АРНАЛҒАН</span
+							>
+						</p>
+						<h1 data-i18n="heroTitle">
+							Үйіңізге сай<br /><em>жиһаз.</em> Мінезі бар<br />дизайн.
+						</h1>
+						<p class="hero-lead" data-i18n="heroLead">
+							TV-аймақтан бастап жатын бөлмеге дейін — өлшеміңізге сай жасалған
+							жиһаз, ұқыпты орнату және бір команда.
+						</p>
+						<div class="hero-buttons">
+							<a
+								class="button button-primary"
+								href="https://wa.me/77087211565"
+								target="_blank"
+								rel="noopener"
+								><span data-i18n="heroCta">Өлшеуге жазылу</span
+								><svg
+									class="button-arrow icon-svg"
+									viewBox="0 0 24 24"
+									aria-hidden="true"
+									focusable="false"
+								>
+									<use href="#arrow-up-right"></use></svg
+							></a>
+							<a class="text-link" href="#catalog"
+								><span data-i18n="heroSecondary">Каталогты көру</span
+								><svg
+									class="icon-svg icon-down"
+									viewBox="0 0 24 24"
+									aria-hidden="true"
+									focusable="false"
+								>
+									<use href="#arrow-down"></use></svg
+							></a>
+						</div>
+						<div class="hero-proof">
+							<div class="proof-avatars" aria-hidden="true">
+								<span>H</span><span>S</span><span>+</span>
+							</div>
+							<p>
+								<strong>10,1K</strong>
+								<span data-i18n="proofFollowers">TikTok-та жазылушы</span
+								><br /><small data-i18n="proofLikes"
+									>Нақты жұмыстар мен пікірлер</small
+								>
+							</p>
+						</div>
+					</div>
+					<div class="hero-aside">
+						<div class="hero-aside-note">
+							<small data-i18n="heroNoteTop"
+								>Тапсырыспен жасалған интерьер</small
+							><strong data-i18n="heroNoteBottom"
+								>Бір бөлшектен толық кеңістікке дейін</strong
+							>
+						</div>
+						<div class="hero-aside-index">
+							<span>01</span><i></i
+							><span data-i18n="heroBottomRight">ШЫМКЕНТ, ҚАЗАҚСТАН</span>
+						</div>
+					</div>
+				</div>
+				<div class="hero-bottom wrap">
+					<span data-i18n="heroBottomLeft">ЖИҺАЗ • ДИЗАЙН • ОРНАТУ</span>
+					<span class="scroll-indicator"
+						><span></span><span data-i18n="scroll">ТӨМЕН ЖЫЛЖЫТУ</span></span
+					>
+					<span data-i18n="heroVideoCaption"
+						>КЕҢІСТІКТІ ЖОҒАРЫДАН ТӨМЕНГЕ ДЕЙІН</span
+					>
+				</div>
+			</section>
 
-      <section class="ticker" aria-label="Қызметтер">
-        <div class="ticker-track" aria-hidden="true">
-          <span data-i18n="tickerOne">Жеке өлшем</span><i>✳</i><span data-i18n="tickerTwo">Заманауи TV-аймақтар</span><i>✳</i><span data-i18n="tickerThree">Жатын бөлмелер</span><i>✳</i><span data-i18n="tickerFour">Шымкент</span><i>✳</i><span data-i18n="tickerOne">Жеке өлшем</span><i>✳</i><span data-i18n="tickerTwo">Заманауи TV-аймақтар</span><i>✳</i><span data-i18n="tickerThree">Жатын бөлмелер</span><i>✳</i><span data-i18n="tickerFour">Шымкент</span>
-        </div>
-      </section>
+			<section class="ticker" aria-label="Қызметтер">
+				<div class="ticker-track" aria-hidden="true">
+					<span data-i18n="tickerOne">Жеке өлшем</span>
+					<svg class="icon-svg ticker-icon" aria-hidden="true" focusable="false"><use href="#icon-spark"></use></svg>
+					<span data-i18n="tickerTwo">Заманауи TV-аймақтар</span>
+					<svg class="icon-svg ticker-icon" aria-hidden="true" focusable="false"><use href="#icon-spark"></use></svg>
+					<span data-i18n="tickerThree">Жатын бөлмелер</span>
+					<svg class="icon-svg ticker-icon" aria-hidden="true" focusable="false"><use href="#icon-spark"></use></svg>
+					<span data-i18n="tickerFour">Шымкент</span>
+					<svg class="icon-svg ticker-icon" aria-hidden="true" focusable="false"><use href="#icon-spark"></use></svg>
+					<span data-i18n="tickerOne">Жеке өлшем</span>
+					<svg class="icon-svg ticker-icon" aria-hidden="true" focusable="false"><use href="#icon-spark"></use></svg>
+					<span data-i18n="tickerTwo">Заманауи TV-аймақтар</span>
+					<svg class="icon-svg ticker-icon" aria-hidden="true" focusable="false"><use href="#icon-spark"></use></svg>
+					<span data-i18n="tickerThree">Жатын бөлмелер</span>
+					<svg class="icon-svg ticker-icon" aria-hidden="true" focusable="false"><use href="#icon-spark"></use></svg>
+					<span data-i18n="tickerFour">Шымкент</span>
+				</div>
+			</section>
 
-      <section class="about-section section-light" id="about">
-        <div class="wrap about-layout">
-          <div class="about-photo">
-            <img src="assets/images/founder-placeholder.jpg" alt="Временный образ основателя для макета" data-i18n-alt="aboutPhotoAlt" loading="lazy" />
-            <div class="about-photo-shade"></div>
-            <div class="about-photo-mark"><small data-i18n="aboutPhotoTag">ПОРТРЕТ ДЛЯ МАКЕТА</small><strong>HIT STROI <span>·</span> SHYMKENT</strong></div>
-          </div>
-          <div class="about-copy">
-            <div class="section-kicker"><span class="kicker-rule"></span><span data-i18n="introKicker">БІЗ ТУРАЛЫ</span></div>
-            <h2 data-i18n="aboutTitle">Ойдан бастаймыз.<br /><em>Жиһазбен жалғастырамыз.</em></h2>
-            <p class="about-lead" data-i18n="aboutText">HIT STROI — үйге сай жиһазды өлшеп, жобалап, орнатып беретін Шымкент командасы. Әр жоба клиенттің идеясынан басталып, дайын кеңістікке дейін бірге жасалады.</p>
-            <div class="about-stats">
-              <article><strong>2019</strong><span data-i18n="aboutSince">Шымкентте жұмысты бастаған жыл</span></article>
-              <article><strong>150+</strong><span data-i18n="aboutProjects">аяқталған жоба</span></article>
-            </div>
-            <p class="about-draft-note" data-i18n="aboutDraftNote">Жыл мен жоба саны — уақытша мысал, тапсырыс берушімен нақтылау керек.</p>
-            <a class="about-cta" href="#contacts"><span data-i18n="aboutCta">Біз туралы сұрау</span><svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#arrow-up-right"></use></svg></a>
-          </div>
-        </div>
-      </section>
+			<section class="catalog-section section-light" id="catalog">
+				<div class="wrap">
+					<div class="section-heading heading-dark">
+						<div>
+							<div class="section-kicker">
+								<span class="kicker-rule"></span
+								><span data-i18n="catalogKicker">КАТАЛОГ</span>
+							</div>
+							<h2 data-i18n="catalogTitle">
+								Өзіңізге<br /><em>ұнағанын таңдаңыз.</em>
+							</h2>
+						</div>
+						<div class="heading-aside">
+							<p data-i18n="catalogText">
+								Баға материал мен өлшемге қарай нақтыланады. Таңдаған үлгіңізді
+								WhatsApp арқылы сұраңыз.
+							</p>
+						</div>
+					</div>
+					<div
+						class="category-grid"
+						role="group"
+						aria-label="Категории мебели"
+						data-i18n-aria="categoryGroup"
+					>
+						<button
+							class="category-card category-card-tv"
+							type="button"
+							data-category="tv"
+							aria-haspopup="dialog"
+							aria-controls="catalog-modal"
+							aria-pressed="false"
+						>
+							<img src="assets/images/hero-room.png" alt="" loading="lazy" />
+							<span class="category-copy"
+								><strong data-i18n="categoryTv">TV-аймақтар</strong></span
+							>
+						</button>
+						<button
+							class="category-card category-card-bedroom"
+							type="button"
+							data-category="bedroom"
+							aria-haspopup="dialog"
+							aria-controls="catalog-modal"
+							aria-pressed="false"
+						>
+							<img
+								src="assets/images/bedroom-concept.jpg"
+								alt=""
+								loading="lazy"
+							/>
+							<span class="category-copy"
+								><strong data-i18n="categoryBedroom"
+									>Жатын бөлмелер</strong
+								></span
+							>
+						</button>
+						<button
+							class="category-card"
+							type="button"
+							data-category="hallway"
+							aria-haspopup="dialog"
+							aria-controls="catalog-modal"
+							aria-pressed="false"
+						>
+							<img
+								src="assets/images/hallway-concept.jpg"
+								alt=""
+								loading="lazy"
+							/>
+							<span class="category-copy"
+								><strong data-i18n="categoryHallway">Кіреберістер</strong></span
+							>
+						</button>
+						<button
+							class="category-card"
+							type="button"
+							data-category="mirror"
+							aria-haspopup="dialog"
+							aria-controls="catalog-modal"
+							aria-pressed="false"
+						>
+							<img
+								src="assets/images/mirror-concept.jpg"
+								alt=""
+								loading="lazy"
+							/>
+							<span class="category-copy"
+								><strong data-i18n="categoryMirror">Айналар</strong></span
+							>
+						</button>
+						<button
+							class="category-card"
+							type="button"
+							data-category="wardrobe"
+							aria-haspopup="dialog"
+							aria-controls="catalog-modal"
+							aria-pressed="false"
+						>
+							<img
+								src="assets/images/wardrobe-concept.jpg"
+								alt=""
+								loading="lazy"
+							/>
+							<span class="category-copy"
+								><strong data-i18n="categoryWardrobe">Шкафтар</strong></span
+							>
+						</button>
+					</div>
+				</div>
+			</section>
 
-      <section class="process-section section-dark" id="process">
-        <div class="wrap">
-          <div class="section-heading heading-light">
-            <div><div class="section-kicker"><span class="kicker-rule"></span><span data-i18n="processKicker">ҚАЛАЙ ЖҰМЫС ІСТЕЙМІЗ</span></div><h2 data-i18n="processTitle">Әр кезеңі<br /><em>түсінікті.</em></h2></div>
-            <div class="heading-aside"><p data-i18n="processText">Алдымен жоба мен бағасын келісеміз. Өндірісті сіз мақұлдағаннан кейін бастаймыз.</p><a class="text-link light-link" href="https://wa.me/77087211565" target="_blank" rel="noopener"><span data-i18n="processCta">Жобаны талқылау</span><svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#arrow-up-right"></use></svg></a></div>
-          </div>
-          <div class="process-steps">
-            <article class="process-step"><div class="process-step-top"><span>01</span><i></i><svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4l10.8-10.8a2.1 2.1 0 0 0-4-4L4 16v4Zm9.5-13.5 4 4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /></svg></div><h3 data-i18n="processStepOneTitle">Өтінім және өлшеу</h3><p data-i18n="processStepOneText">Идеяңызды талқылап, кеңістіктің өлшемін аламыз.</p></article>
-            <article class="process-step"><div class="process-step-top"><span>02</span><i></i><svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4.5h14v15H5zM8 8h8M8 12h8M8 16h5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /></svg></div><h3 data-i18n="processStepTwoTitle">Жоба және есеп</h3><p data-i18n="processStepTwoText">Таңдалған шешім, материал мен бағаны бекітеміз.</p></article>
-            <article class="process-step"><div class="process-step-top"><span>03</span><i></i><svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V8l8-4 8 4v12H4Zm4 0v-7h8v7M8 9h.01M12 9h.01M16 9h.01" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /></svg></div><h3 data-i18n="processStepThreeTitle">Жиһаз жасау</h3><p data-i18n="processStepThreeText">Келісілген жоба бойынша жиһазды дайындаймыз.</p></article>
-            <article class="process-step"><div class="process-step-top"><span>04</span><i></i><svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="m4 12 5 5L20 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" /></svg></div><h3 data-i18n="processStepFourTitle">Жеткізу және орнату</h3><p data-i18n="processStepFourText">Дайын жиһазды жеткізіп, орнына орнатамыз.</p></article>
-          </div>
-        </div>
-      </section>
+			<section class="process-section section-dark" id="process">
+				<div class="wrap">
+					<div class="section-heading heading-light">
+						<div>
+							<div class="section-kicker">
+								<span class="kicker-rule"></span
+								><span data-i18n="processKicker">ҚАЛАЙ ЖҰМЫС ІСТЕЙМІЗ</span>
+							</div>
+							<h2 data-i18n="processTitle">
+								Әр кезеңі<br /><em>түсінікті.</em>
+							</h2>
+						</div>
+						<div class="heading-aside">
+							<p data-i18n="processText">
+								Алдымен жоба мен бағасын келісеміз. Өндірісті сіз мақұлдағаннан
+								кейін бастаймыз.
+							</p>
+							<a
+								class="text-link light-link"
+								href="https://wa.me/77087211565"
+								target="_blank"
+								rel="noopener"
+								><span data-i18n="processCta">Жобаны талқылау</span
+								><svg
+									class="icon-svg"
+									viewBox="0 0 24 24"
+									aria-hidden="true"
+									focusable="false"
+								>
+									<use href="#arrow-up-right"></use></svg
+							></a>
+						</div>
+					</div>
+					<div class="process-steps">
+						<article class="process-step">
+							<div class="process-step-top">
+								<span>01</span><i></i
+								><svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true">
+									<path
+										d="M4 20h4l10.8-10.8a2.1 2.1 0 0 0-4-4L4 16v4Zm9.5-13.5 4 4"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="1.5"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									/>
+								</svg>
+							</div>
+							<h3 data-i18n="processStepOneTitle">Өтінім және өлшеу</h3>
+							<p data-i18n="processStepOneText">
+								Идеяңызды талқылап, кеңістіктің өлшемін аламыз.
+							</p>
+						</article>
+						<article class="process-step">
+							<div class="process-step-top">
+								<span>02</span><i></i
+								><svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true">
+									<path
+										d="M5 4.5h14v15H5zM8 8h8M8 12h8M8 16h5"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="1.5"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									/>
+								</svg>
+							</div>
+							<h3 data-i18n="processStepTwoTitle">Жоба және есеп</h3>
+							<p data-i18n="processStepTwoText">
+								Таңдалған шешім, материал мен бағаны бекітеміз.
+							</p>
+						</article>
+						<article class="process-step">
+							<div class="process-step-top">
+								<span>03</span><i></i
+								><svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true">
+									<path
+										d="M4 20V8l8-4 8 4v12H4Zm4 0v-7h8v7M8 9h.01M12 9h.01M16 9h.01"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="1.5"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									/>
+								</svg>
+							</div>
+							<h3 data-i18n="processStepThreeTitle">Жиһаз жасау</h3>
+							<p data-i18n="processStepThreeText">
+								Келісілген жоба бойынша жиһазды дайындаймыз.
+							</p>
+						</article>
+						<article class="process-step">
+							<div class="process-step-top">
+								<span>04</span><i></i
+								><svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true">
+									<path
+										d="m4 12 5 5L20 6"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="1.8"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									/>
+								</svg>
+							</div>
+							<h3 data-i18n="processStepFourTitle">Жеткізу және орнату</h3>
+							<p data-i18n="processStepFourText">
+								Дайын жиһазды жеткізіп, орнына орнатамыз.
+							</p>
+						</article>
+					</div>
+				</div>
+			</section>
 
-      <section class="catalog-section section-light" id="catalog">
-        <div class="wrap">
-          <div class="section-heading heading-dark">
-            <div><div class="section-kicker"><span class="kicker-rule"></span><span data-i18n="catalogKicker">КАТАЛОГ</span></div><h2 data-i18n="catalogTitle">Өзіңізге<br /><em>ұнағанын таңдаңыз.</em></h2></div>
-            <div class="heading-aside"><p data-i18n="catalogText">Баға материал мен өлшемге қарай нақтыланады. Таңдаған үлгіңізді WhatsApp арқылы сұраңыз.</p></div>
-          </div>
-          <div class="category-grid" role="group" aria-label="Категории мебели" data-i18n-aria="categoryGroup">
-            <button class="category-card category-card-tv" type="button" data-category="tv" aria-haspopup="dialog" aria-controls="catalog-modal" aria-pressed="false">
-              <img src="assets/images/hero-room.png" alt="" loading="lazy" />
-              <span class="category-copy"><strong data-i18n="categoryTv">TV-аймақтар</strong></span>
-            </button>
-            <button class="category-card category-card-bedroom" type="button" data-category="bedroom" aria-haspopup="dialog" aria-controls="catalog-modal" aria-pressed="false">
-              <img src="assets/images/bedroom-concept.jpg" alt="" loading="lazy" />
-              <span class="category-copy"><strong data-i18n="categoryBedroom">Жатын бөлмелер</strong></span>
-            </button>
-            <button class="category-card" type="button" data-category="hallway" aria-haspopup="dialog" aria-controls="catalog-modal" aria-pressed="false">
-              <img src="assets/images/hallway-concept.jpg" alt="" loading="lazy" />
-              <span class="category-copy"><strong data-i18n="categoryHallway">Кіреберістер</strong></span>
-            </button>
-            <button class="category-card" type="button" data-category="mirror" aria-haspopup="dialog" aria-controls="catalog-modal" aria-pressed="false">
-              <img src="assets/images/mirror-concept.jpg" alt="" loading="lazy" />
-              <span class="category-copy"><strong data-i18n="categoryMirror">Айналар</strong></span>
-            </button>
-            <button class="category-card" type="button" data-category="wardrobe" aria-haspopup="dialog" aria-controls="catalog-modal" aria-pressed="false">
-              <img src="assets/images/wardrobe-concept.jpg" alt="" loading="lazy" />
-              <span class="category-copy"><strong data-i18n="categoryWardrobe">Шкафтар</strong></span>
-            </button>
-          </div>
-        </div>
-      </section>
+			<section class="about-section section-light" id="about">
+				<div class="wrap about-layout">
+					<div class="about-photo">
+						<img
+							src="assets/images/founder-placeholder.jpg"
+							alt="Временный образ основателя для макета"
+							data-i18n-alt="aboutPhotoAlt"
+							loading="lazy"
+						/>
+						<div class="about-photo-shade"></div>
+						<div class="about-photo-mark">
+							<small data-i18n="aboutPhotoTag">ПОРТРЕТ ДЛЯ МАКЕТА</small
+							><strong>HIT STROI <span>·</span> SHYMKENT</strong>
+						</div>
+					</div>
+					<div class="about-copy">
+						<div class="section-kicker">
+							<span class="kicker-rule"></span
+							><span data-i18n="introKicker">БІЗ ТУРАЛЫ</span>
+						</div>
+						<h2 data-i18n="aboutTitle">
+							Ойдан бастаймыз.<br /><em>Жиһазбен жалғастырамыз.</em>
+						</h2>
+						<p class="about-lead" data-i18n="aboutText">
+							HIT STROI — үйге сай жиһазды өлшеп, жобалап, орнатып беретін
+							Шымкент командасы. Әр жоба клиенттің идеясынан басталып, дайын
+							кеңістікке дейін бірге жасалады.
+						</p>
+						<div class="about-stats">
+							<article>
+								<strong>2023</strong
+								><span data-i18n="aboutSince"
+									>Шымкентте жұмысты бастаған жыл</span
+								>
+							</article>
+							<article>
+								<strong>500+</strong
+								><span data-i18n="aboutProjects">аяқталған жоба</span>
+							</article>
+						</div>
+						<a class="about-cta" href="#contacts"
+							><span data-i18n="aboutCta">Біз туралы сұрау</span
+							><svg
+								class="icon-svg"
+								viewBox="0 0 24 24"
+								aria-hidden="true"
+								focusable="false"
+							>
+								<use href="#arrow-up-right"></use></svg
+						></a>
+					</div>
+				</div>
+			</section>
 
-      <dialog class="catalog-modal" id="catalog-modal" aria-labelledby="catalog-modal-title">
-        <div class="catalog-modal-inner">
-          <div class="catalog-modal-header">
-            <div><div class="section-kicker"><span>HIT STROI</span><span class="kicker-rule"></span><span data-i18n="modalKicker">КАТАЛОГ МОДЕЛДЕРІ</span></div><h2 id="catalog-modal-title">TV-аймақтар</h2></div>
-            <div class="catalog-modal-header-actions"><span class="catalog-count" id="catalog-count" aria-live="polite"></span><button class="catalog-modal-close" type="button" data-i18n-aria="closeCatalog" aria-label="Каталогты жабу"><svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#icon-close"></use></svg></button></div>
-          </div>
-          <div class="product-grid catalog-modal-products" id="catalog-products" aria-live="polite"></div>
-          <div class="catalog-note"><span class="note-star">✳</span><p data-i18n="catalogNote">Баға өлшем мен материалға қарай нақтыланады.</p><a href="https://wa.me/77087211565" target="_blank" rel="noopener"><span data-i18n="catalogAsk">Бағасын сұрау</span><svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#arrow-up-right"></use></svg></a></div>
-        </div>
-      </dialog>
+			<section class="reviews-section section-dark" id="reviews">
+				<div class="wrap">
+					<div class="section-heading heading-dark reviews-heading">
+						<div>
+							<div class="section-kicker">
+								<span class="kicker-rule"></span
+								><span data-i18n="reviewsKicker">ПІКІРЛЕР</span>
+							</div>
+							<h2 data-i18n="reviewsTitle">
+								Клиенттер<br /><em>не дейді?</em>
+							</h2>
+						</div>
+						<div class="heading-aside">
+							<p data-i18n="reviewsText">
+								Фото мен видео-пікірлер. Жұлдызсыз — тек клиенттердің өз
+								сөздері.
+							</p>
+						</div>
+					</div>
+					<div class="reviews-carousel" id="reviews-carousel">
+						<div class="reviews-viewport">
+							<div class="reviews-track">
+								<article class="review-card">
+									<div class="review-media">
+										<img
+											src="assets/images/media-wall-main.jpg"
+											alt="TV-аймақ жобасы, уақытша медиа"
+											data-i18n-alt="reviewImageAltOne"
+											loading="lazy"
+										/><span
+											class="review-media-tag"
+											data-i18n="reviewPhotoLabel"
+											>ФОТО МАКЕТІ</span
+										>
+									</div>
+									<div class="review-content">
+										<blockquote data-i18n="reviewPlaceholder">
+											Бұл жерде клиенттің нақты пікірі болады. Мәтінді кейін
+											тапсырыс берушімен толтырамыз.
+										</blockquote>
+										<div class="review-author">
+											<span class="review-avatar">—</span>
+											<div>
+												<strong data-i18n="reviewClient">Клиент пікірі</strong
+												><small data-i18n="reviewDraft">Уақытша мәтін</small>
+											</div>
+										</div>
+									</div>
+								</article>
+								<article class="review-card">
+									<div class="review-media">
+										<img
+											src="assets/images/hallway-glass.jpg"
+											alt="Кіреберіс жобасы, уақытша медиа"
+											data-i18n-alt="reviewImageAltTwo"
+											loading="lazy"
+										/><span
+											class="review-media-tag"
+											data-i18n="reviewPhotoLabel"
+											>ФОТО МАКЕТІ</span
+										>
+									</div>
+									<div class="review-content">
+										<blockquote data-i18n="reviewPlaceholder">
+											Бұл жерде клиенттің нақты пікірі болады. Мәтінді кейін
+											тапсырыс берушімен толтырамыз.
+										</blockquote>
+										<div class="review-author">
+											<span class="review-avatar">—</span>
+											<div>
+												<strong data-i18n="reviewClient">Клиент пікірі</strong
+												><small data-i18n="reviewDraft">Уақытша мәтін</small>
+											</div>
+										</div>
+									</div>
+								</article>
+								<article class="review-card review-card-video">
+									<div class="review-media">
+										<video
+											controls
+											playsinline
+											preload="metadata"
+											poster="assets/images/hero-room.png"
+										>
+											<source
+												src="assets/video/hero-room-sweep.mp4"
+												type="video/mp4"
+											/></video
+										><span class="review-media-tag" data-i18n="reviewVideoLabel"
+											>ВИДЕО МАКЕТІ</span
+										>
+									</div>
+									<div class="review-content">
+										<blockquote data-i18n="reviewPlaceholder">
+											Бұл жерде клиенттің нақты пікірі болады. Мәтінді кейін
+											тапсырыс берушімен толтырамыз.
+										</blockquote>
+										<div class="review-author">
+											<span class="review-avatar">—</span>
+											<div>
+												<strong data-i18n="reviewClient">Клиент пікірі</strong
+												><small data-i18n="reviewDraft">Уақытша мәтін</small>
+											</div>
+										</div>
+									</div>
+								</article>
+							</div>
+						</div>
+						<div class="reviews-controls">
+							<p data-i18n="reviewsDraftNote">
+								Медиа мен мәтін — уақытша материалдар, оларды ауыстыру керек.
+							</p>
+							<div class="reviews-actions">
+								<button
+									class="reviews-autoplay"
+									type="button"
+									aria-pressed="false"
+									data-i18n-aria="reviewsPause"
+									data-i18n="reviewsPause"
+								>
+									Пауза
+								</button>
+								<button
+									class="reviews-arrow"
+									type="button"
+									data-review-prev
+									data-i18n-aria="reviewsPrev"
+									aria-label="Алдыңғы пікір"
+								>
+									<svg
+										class="icon-svg"
+										viewBox="0 0 24 24"
+										aria-hidden="true"
+										focusable="false"
+									>
+										<use href="#arrow-left"></use>
+									</svg>
+								</button>
+								<button
+									class="reviews-arrow"
+									type="button"
+									data-review-next
+									data-i18n-aria="reviewsNext"
+									aria-label="Келесі пікір"
+								>
+									<svg
+										class="icon-svg"
+										viewBox="0 0 24 24"
+										aria-hidden="true"
+										focusable="false"
+									>
+										<use href="#arrow-right"></use>
+									</svg>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 
-      <section class="contact-section" id="contacts">
-        <div class="contact-pattern" aria-hidden="true"></div>
-        <div class="wrap contact-grid">
-          <div class="contact-main"><div class="section-kicker"><span class="kicker-rule"></span><span data-i18n="contactKicker">БАЙЛАНЫС</span></div><h2 data-i18n="contactTitle">Жаңа үйге<br /><em>жаңа шешім.</em></h2><p data-i18n="contactText">Өлшеміңізді, идеяңызды немесе шабыт суретін жіберіңіз. Жобаны бірге бастайық.</p><a class="button button-light" href="https://wa.me/77087211565" target="_blank" rel="noopener"><span data-i18n="contactCta">WhatsApp-та жазу</span><svg class="button-arrow icon-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#arrow-up-right"></use></svg></a></div>
-          <div class="contact-side"><div class="contact-brand"><img src="assets/images/hit-stroi-logo.png" alt="" /><div><b>HIT STROI</b><span>SHYMKENT</span></div></div><a class="contact-method" href="tel:+77087211565"><small data-i18n="phoneLabel">ТЕЛЕФОН / WHATSAPP</small><strong>+7 708 721 15 65</strong><svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#arrow-up-right"></use></svg></a><a class="contact-method" href="https://www.tiktok.com/@hit_stroi_shym" target="_blank" rel="noopener"><small>TIKTOK</small><strong>@hit_stroi_shym</strong><svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#arrow-up-right"></use></svg></a><div class="contact-method"><small data-i18n="locationLabel">ҚАЛА</small><strong data-i18n="locationValue">Шымкент, Қазақстан</strong><span class="location-pin">⌖</span></div></div>
-        </div>
-      </section>
-    </main>
+			<dialog
+				class="catalog-modal"
+				id="catalog-modal"
+				aria-labelledby="catalog-modal-title"
+			>
+				<div class="catalog-modal-inner">
+					<button
+						class="catalog-modal-close"
+						type="button"
+						data-i18n-aria="closeCatalog"
+						aria-label="Каталогты жабу"
+					>
+						<svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+							<use href="#icon-close"></use>
+						</svg>
+					</button>
+					<div class="catalog-modal-header">
+						<div>
+							<div class="section-kicker">
+								<span>HIT STROI</span><span class="kicker-rule"></span
+								><span data-i18n="modalKicker">КАТАЛОГ МОДЕЛДЕРІ</span>
+							</div>
+							<h2 id="catalog-modal-title">TV-аймақтар</h2>
+						</div>
+						<div class="catalog-modal-header-actions">
+							<span
+								class="catalog-count"
+								id="catalog-count"
+								aria-live="polite"
+							></span
+						</div>
+					</div>
+					<div
+						class="product-grid catalog-modal-products"
+						id="catalog-products"
+						aria-live="polite"
+					></div>
+					<div class="product-detail" id="product-detail" hidden></div>
+					<div class="catalog-note">
+						<button class="catalog-note-close" type="button" data-i18n-aria="catalogNoteClose" aria-label="Ескертуді жасыру">
+							<svg class="icon-svg" aria-hidden="true" focusable="false"><use href="#icon-close"></use></svg>
+						</button>
+						<svg
+							class="icon-svg note-star"
+							aria-hidden="true"
+							focusable="false"
+						>
+							<use href="#icon-spark"></use>
+						</svg>
+						<p data-i18n="catalogNote">
+							Баға өлшем мен материалға қарай нақтыланады.
+						</p>
+						<a href="https://wa.me/77087211565" target="_blank" rel="noopener"
+							><span data-i18n="catalogAsk">Бағасын сұрау</span
+							><svg
+								class="icon-svg"
+								viewBox="0 0 24 24"
+								aria-hidden="true"
+								focusable="false"
+							>
+								<use href="#arrow-up-right"></use></svg
+						></a>
+					</div>
+				</div>
+			</dialog>
 
-    <footer class="site-footer">
-      <div class="wrap footer-inner"><a class="footer-brand" href="#top">HIT STROI <span>·</span> SHYMKENT</a><p data-i18n="footerCopy">Жиһазды тапсырыспен жасау • Шымкент</p><a href="#top" class="back-top"><span data-i18n="backTop">БАСЫНА</span><svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#arrow-up"></use></svg></a><small>© <span id="year"></span> HIT STROI</small></div>
-    </footer>
-  </body>
+			<section class="contact-section" id="contacts">
+				<div class="contact-pattern" aria-hidden="true"></div>
+				<div class="wrap contact-grid">
+					<div class="contact-main">
+						<div class="section-kicker">
+							<span class="kicker-rule"></span
+							><span data-i18n="contactKicker">БАЙЛАНЫС</span>
+						</div>
+						<h2 data-i18n="contactTitle">
+							Жаңа үйге<br /><em>жаңа шешім.</em>
+						</h2>
+						<p data-i18n="contactText">
+							Өлшеміңізді, идеяңызды немесе шабыт суретін жіберіңіз. Жобаны
+							бірге бастайық.
+						</p>
+						<a
+							class="button button-light"
+							href="https://wa.me/77087211565"
+							target="_blank"
+							rel="noopener"
+							><span data-i18n="contactCta">WhatsApp-та жазу</span
+							><svg
+								class="button-arrow icon-svg"
+								viewBox="0 0 24 24"
+								aria-hidden="true"
+								focusable="false"
+							>
+								<use href="#arrow-up-right"></use></svg
+						></a>
+					</div>
+					<div class="contact-side">
+						<div class="contact-brand">
+							<img src="assets/images/hit-stroi-logo.png" alt="" />
+							<div><b>HIT STROI</b><span>SHYMKENT</span></div>
+						</div>
+						<a class="contact-method" href="tel:+77087211565"
+							><small data-i18n="phoneLabel">ТЕЛЕФОН / WHATSAPP</small
+							><strong>+7 708 721 15 65</strong
+							><svg
+								class="icon-svg"
+								viewBox="0 0 24 24"
+								aria-hidden="true"
+								focusable="false"
+							>
+								<use href="#arrow-up-right"></use></svg></a
+						><a
+							class="contact-method"
+							href="https://www.tiktok.com/@hit_stroi_shym"
+							target="_blank"
+							rel="noopener"
+							><small>TIKTOK</small><strong>@hit_stroi_shym</strong
+							><svg
+								class="icon-svg"
+								viewBox="0 0 24 24"
+								aria-hidden="true"
+								focusable="false"
+							>
+								<use href="#arrow-up-right"></use></svg
+						></a>
+						<div class="contact-method">
+							<small data-i18n="locationLabel">ҚАЛА</small
+							><strong data-i18n="locationValue">Шымкент, Қазақстан</strong
+							><span class="location-pin">⌖</span>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="site-footer">
+			<div class="wrap footer-inner">
+				<a class="footer-brand" href="#top"
+					>HIT STROI <span>·</span> SHYMKENT</a
+				>
+				<p data-i18n="footerCopy">Жиһазды тапсырыспен жасау • Шымкент</p>
+				<a href="#top" class="back-top"
+					><span data-i18n="backTop">БАСЫНА</span
+					><svg
+						class="icon-svg"
+						viewBox="0 0 24 24"
+						aria-hidden="true"
+						focusable="false"
+					>
+						<use href="#arrow-up"></use></svg></a
+				><small>© <span id="year"></span> HIT STROI</small>
+			</div>
+		</footer>
+	</body>
 </html>
