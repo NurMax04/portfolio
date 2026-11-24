@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="kk">
+<html lang="ru">
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -18,14 +18,14 @@
 			content="TV-зоны, спальные зоны, шкафы, прихожие и зеркала по вашим размерам."
 		/>
 		<title>HIT STROI — Мебель на заказ в Шымкенте</title>
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
-			href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
-			rel="stylesheet"
+			rel="preload"
+			as="image"
+			href="assets/images/hero-room.webp"
+			fetchpriority="high"
 		/>
-		<link rel="icon" type="image/svg+xml" href="assets/images/hit-stroi-favicon.svg" />
-    <link rel="alternate icon" type="image/png" href="assets/images/hit-stroi-logo.png" />
+		<link rel="icon" href="favicon.ico?v=3" sizes="any" />
+		<link rel="icon" type="image/png" sizes="128x128" href="assets/images/hit-stroi-icon.png?v=3" />
 		<link rel="stylesheet" href="assets/css/site.css" />
 		<script type="application/ld+json">
 			{
@@ -128,11 +128,8 @@
 		<a class="skip-link" href="#main" data-i18n="skip">Негізгі мазмұнға өту</a>
 		<header class="site-header" id="top">
 			<div class="header-inner wrap">
-				<a class="brand" href="#top" aria-label="HIT STROI, главная">
-					<img
-						src="assets/images/hit-stroi-logo.png"
-						alt="HIT STROI SHYMKENT"
-					/>
+				<a class="brand" href="#top">
+					<img src="assets/images/hit-stroi-logo.webp" alt="" />
 					<span class="brand-copy"
 						><b>HIT STROI</b><small>SHYMKENT</small></span
 					>
@@ -176,6 +173,7 @@
 					<a
 						class="button button-small button-outline header-cta"
 						href="https://wa.me/77087211565"
+						data-site-whatsapp
 						target="_blank"
 						rel="noopener"
 						data-i18n="headerCta"
@@ -186,18 +184,20 @@
 		</header>
 
 		<main id="main">
-			<section class="hero hero-cinema section-dark" id="top">
+			<section class="hero hero-cinema section-dark">
 				<div class="hero-media" aria-hidden="true">
 					<video
 						class="hero-video"
-						autoplay
 						muted
 						loop
 						playsinline
-						preload="metadata"
-						poster="assets/images/hero-room.png"
+						preload="none"
+						poster="assets/images/hero-room.webp"
 					>
-						<source src="assets/video/hero-room-sweep.mp4" type="video/mp4" />
+						<source
+							data-src="assets/video/hero-room-sweep.mp4"
+							type="video/mp4"
+						/>
 					</video>
 					<div class="hero-video-shade"></div>
 					<div class="hero-video-label">
@@ -225,6 +225,7 @@
 							<a
 								class="button button-primary"
 								href="https://wa.me/77087211565"
+								data-site-whatsapp
 								target="_blank"
 								rel="noopener"
 								><span data-i18n="heroCta">Өлшеуге жазылу</span
@@ -288,19 +289,61 @@
 			<section class="ticker" aria-label="Қызметтер">
 				<div class="ticker-track" aria-hidden="true">
 					<span data-i18n="tickerOne">Жеке өлшем</span>
-					<svg class="icon-svg ticker-icon" aria-hidden="true" focusable="false"><use href="#icon-spark"></use></svg>
+					<svg
+						class="icon-svg ticker-icon"
+						aria-hidden="true"
+						focusable="false"
+					>
+						<use href="#icon-spark"></use>
+					</svg>
 					<span data-i18n="tickerTwo">Заманауи TV зоналар</span>
-					<svg class="icon-svg ticker-icon" aria-hidden="true" focusable="false"><use href="#icon-spark"></use></svg>
+					<svg
+						class="icon-svg ticker-icon"
+						aria-hidden="true"
+						focusable="false"
+					>
+						<use href="#icon-spark"></use>
+					</svg>
 					<span data-i18n="tickerThree">Жатын бөлмелер</span>
-					<svg class="icon-svg ticker-icon" aria-hidden="true" focusable="false"><use href="#icon-spark"></use></svg>
+					<svg
+						class="icon-svg ticker-icon"
+						aria-hidden="true"
+						focusable="false"
+					>
+						<use href="#icon-spark"></use>
+					</svg>
 					<span data-i18n="tickerFour">Шымкент</span>
-					<svg class="icon-svg ticker-icon" aria-hidden="true" focusable="false"><use href="#icon-spark"></use></svg>
+					<svg
+						class="icon-svg ticker-icon"
+						aria-hidden="true"
+						focusable="false"
+					>
+						<use href="#icon-spark"></use>
+					</svg>
 					<span data-i18n="tickerOne">Жеке өлшем</span>
-					<svg class="icon-svg ticker-icon" aria-hidden="true" focusable="false"><use href="#icon-spark"></use></svg>
+					<svg
+						class="icon-svg ticker-icon"
+						aria-hidden="true"
+						focusable="false"
+					>
+						<use href="#icon-spark"></use>
+					</svg>
 					<span data-i18n="tickerTwo">Заманауи TV зоналар</span>
-					<svg class="icon-svg ticker-icon" aria-hidden="true" focusable="false"><use href="#icon-spark"></use></svg>
+					<svg
+						class="icon-svg ticker-icon"
+						aria-hidden="true"
+						focusable="false"
+					>
+						<use href="#icon-spark"></use>
+					</svg>
 					<span data-i18n="tickerThree">Жатын бөлмелер</span>
-					<svg class="icon-svg ticker-icon" aria-hidden="true" focusable="false"><use href="#icon-spark"></use></svg>
+					<svg
+						class="icon-svg ticker-icon"
+						aria-hidden="true"
+						focusable="false"
+					>
+						<use href="#icon-spark"></use>
+					</svg>
 					<span data-i18n="tickerFour">Шымкент</span>
 				</div>
 			</section>
@@ -338,7 +381,7 @@
 							aria-controls="catalog-modal"
 							aria-pressed="false"
 						>
-							<img src="assets/images/hero-room.png" alt="" loading="lazy" />
+							<img src="assets/images/hero-room.webp" alt="" loading="lazy" />
 							<span class="category-copy"
 								><strong data-i18n="categoryTv">TV зоналар</strong></span
 							>
@@ -352,7 +395,7 @@
 							aria-pressed="false"
 						>
 							<img
-								src="assets/images/bedroom-concept.jpg"
+								src="assets/images/bedroom-concept.webp"
 								alt=""
 								loading="lazy"
 							/>
@@ -371,7 +414,7 @@
 							aria-pressed="false"
 						>
 							<img
-								src="assets/images/hallway-concept.jpg"
+								src="assets/images/hallway-concept.webp"
 								alt=""
 								loading="lazy"
 							/>
@@ -388,7 +431,7 @@
 							aria-pressed="false"
 						>
 							<img
-								src="assets/images/mirror-concept.jpg"
+								src="assets/images/mirror-concept.webp"
 								alt=""
 								loading="lazy"
 							/>
@@ -405,7 +448,7 @@
 							aria-pressed="false"
 						>
 							<img
-								src="assets/images/wardrobe-concept.jpg"
+								src="assets/images/wardrobe-concept.webp"
 								alt=""
 								loading="lazy"
 							/>
@@ -437,6 +480,7 @@
 							<a
 								class="text-link light-link"
 								href="https://wa.me/77087211565"
+								data-site-whatsapp
 								target="_blank"
 								rel="noopener"
 								><span data-i18n="processCta">Жобаны талқылау</span
@@ -535,15 +579,14 @@
 				<div class="wrap about-layout">
 					<div class="about-photo">
 						<img
-							src="assets/images/founder-placeholder.jpg"
-							alt="Временный образ основателя для макета"
+							src="assets/images/hit-stroi-author.webp"
+							alt="HIT STROI өкілінің портреті"
 							data-i18n-alt="aboutPhotoAlt"
 							loading="lazy"
 						/>
 						<div class="about-photo-shade"></div>
 						<div class="about-photo-mark">
-							<small data-i18n="aboutPhotoTag">ПОРТРЕТ ДЛЯ МАКЕТА</small
-							><strong>HIT STROI <span>·</span> SHYMKENT</strong>
+							<strong>HIT STROI <span>·</span> SHYMKENT</strong>
 						</div>
 					</div>
 					<div class="about-copy">
@@ -607,86 +650,106 @@
 					<div class="reviews-carousel" id="reviews-carousel">
 						<div class="reviews-viewport">
 							<div class="reviews-track">
-								<article class="review-card">
+								<article class="review-card review-card-tiktok">
 									<div class="review-media">
-										<img
-											src="assets/images/media-wall-main.jpg"
-											alt="TV зона жобасы, уақытша медиа"
-											data-i18n-alt="reviewImageAltOne"
-											loading="lazy"
-										/><span
-											class="review-media-tag"
-											data-i18n="reviewPhotoLabel"
-											>ФОТО МАКЕТІ</span
+										<div class="review-video-cover" aria-hidden="true">
+											<span class="review-cover-brand">HIT STROI</span>
+										</div>
+										<button
+											class="review-video-open"
+											type="button"
+											data-review-video-id="7655763520113462535"
+										>
+											<span class="review-video-play" aria-hidden="true"
+												>▶</span
+											>
+											<span data-i18n="reviewOpenVideo">Видеоны толық ашу</span>
+										</button>
+										<span class="review-media-tag" data-i18n="reviewVideoLabel"
+											>ВИДЕО-ПІКІР</span
 										>
 									</div>
 									<div class="review-content">
-										<blockquote data-i18n="reviewPlaceholder">
-											Бұл жерде клиенттің нақты пікірі болады. Мәтінді кейін
-											тапсырыс берушімен толтырамыз.
+										<blockquote data-i18n="reviewSummaryOne">
+											Клиент екінші ТВ зонасын жасау үшін HIT STROI командасына
+											қайта сенім білдірді. Бейнеде аяқталып жатқан жоба
+											көрсетіледі. Сіз де үйіңізге сай ТВ зонаға тапсырыс бере
+											аласыз.
 										</blockquote>
 										<div class="review-author">
-											<span class="review-avatar">—</span>
+											<span class="review-avatar">✓</span>
 											<div>
 												<strong data-i18n="reviewClient">Клиент пікірі</strong
-												><small data-i18n="reviewDraft">Уақытша мәтін</small>
+												><small>HIT STROI · TikTok</small>
 											</div>
 										</div>
 									</div>
 								</article>
-								<article class="review-card">
+								<article class="review-card review-card-tiktok">
 									<div class="review-media">
-										<img
-											src="assets/images/hallway-glass.jpg"
-											alt="Кіреберіс жобасы, уақытша медиа"
-											data-i18n-alt="reviewImageAltTwo"
-											loading="lazy"
-										/><span
-											class="review-media-tag"
-											data-i18n="reviewPhotoLabel"
-											>ФОТО МАКЕТІ</span
+										<div class="review-video-cover" aria-hidden="true">
+											<span class="review-cover-brand">HIT STROI</span>
+										</div>
+										<button
+											class="review-video-open"
+											type="button"
+											data-review-video-id="7608617789649128711"
+										>
+											<span class="review-video-play" aria-hidden="true"
+												>▶</span
+											>
+											<span data-i18n="reviewOpenVideo">Видеоны толық ашу</span>
+										</button>
+										<span class="review-media-tag" data-i18n="reviewVideoLabel"
+											>ВИДЕО-ПІКІР</span
 										>
 									</div>
 									<div class="review-content">
-										<blockquote data-i18n="reviewPlaceholder">
-											Бұл жерде клиенттің нақты пікірі болады. Мәтінді кейін
-											тапсырыс берушімен толтырамыз.
+										<blockquote data-i18n="reviewSummaryTwo">
+											Бұл — Шымкенттегі ТВ зонасы туралы клиент пікірі. Роликтен
+											HIT STROI жобасымен танысып, тапсырыспен жасалған жиһазды
+											көре аласыз. Жеке есеп пен кеңес алу үшін командаға
+											хабарласыңыз.
 										</blockquote>
 										<div class="review-author">
-											<span class="review-avatar">—</span>
+											<span class="review-avatar">✓</span>
 											<div>
 												<strong data-i18n="reviewClient">Клиент пікірі</strong
-												><small data-i18n="reviewDraft">Уақытша мәтін</small>
+												><small>HIT STROI · TikTok</small>
 											</div>
 										</div>
 									</div>
 								</article>
-								<article class="review-card review-card-video">
+								<article class="review-card review-card-tiktok">
 									<div class="review-media">
-										<video
-											controls
-											playsinline
-											preload="metadata"
-											poster="assets/images/hero-room.png"
+										<div class="review-video-cover" aria-hidden="true">
+											<span class="review-cover-brand">HIT STROI</span>
+										</div>
+										<button
+											class="review-video-open"
+											type="button"
+											data-review-video-id="7600109253088595218"
 										>
-											<source
-												src="assets/video/hero-room-sweep.mp4"
-												type="video/mp4"
-											/></video
-										><span class="review-media-tag" data-i18n="reviewVideoLabel"
-											>ВИДЕО МАКЕТІ</span
+											<span class="review-video-play" aria-hidden="true"
+												>▶</span
+											>
+											<span data-i18n="reviewOpenVideo">Видеоны толық ашу</span>
+										</button>
+										<span class="review-media-tag" data-i18n="reviewVideoLabel"
+											>ВИДЕО-ПІКІР</span
 										>
 									</div>
 									<div class="review-content">
-										<blockquote data-i18n="reviewPlaceholder">
-											Бұл жерде клиенттің нақты пікірі болады. Мәтінді кейін
-											тапсырыс берушімен толтырамыз.
+										<blockquote data-i18n="reviewSummaryThree">
+											HIT STROI ТВ зонаға тапсырыс қабылдайды. Видео компанияның
+											жобалары мен қызметін таныстырады. Жоба өлшемі мен
+											бөлшектерін келісу үшін командаға хабарласыңыз.
 										</blockquote>
 										<div class="review-author">
-											<span class="review-avatar">—</span>
+											<span class="review-avatar">✓</span>
 											<div>
 												<strong data-i18n="reviewClient">Клиент пікірі</strong
-												><small data-i18n="reviewDraft">Уақытша мәтін</small>
+												><small>HIT STROI · TikTok</small>
 											</div>
 										</div>
 									</div>
@@ -694,19 +757,7 @@
 							</div>
 						</div>
 						<div class="reviews-controls">
-							<p data-i18n="reviewsDraftNote">
-								Медиа мен мәтін — уақытша материалдар, оларды ауыстыру керек.
-							</p>
 							<div class="reviews-actions">
-								<button
-									class="reviews-autoplay"
-									type="button"
-									aria-pressed="false"
-									data-i18n-aria="reviewsPause"
-									data-i18n="reviewsPause"
-								>
-									Пауза
-								</button>
 								<button
 									class="reviews-arrow"
 									type="button"
@@ -746,6 +797,26 @@
 			</section>
 
 			<dialog
+				class="review-video-dialog"
+				id="review-video-dialog"
+				data-i18n-aria="reviewVideoDialogAria"
+				aria-label="Видео-пікірді толық экранда қарау"
+			>
+				<button
+					class="review-video-dialog-close"
+					type="button"
+					data-i18n-aria="reviewVideoClose"
+					aria-label="Видео-пікірді жабу"
+				>
+					×
+				</button>
+				<div
+					class="review-video-dialog-frame"
+					id="review-video-dialog-frame"
+				></div>
+			</dialog>
+
+			<dialog
 				class="catalog-modal"
 				id="catalog-modal"
 				aria-labelledby="catalog-modal-title"
@@ -771,7 +842,12 @@
 								data-i18n-aria="closeCatalog"
 								aria-label="Каталогты жабу"
 							>
-								<svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+								<svg
+									class="icon-svg"
+									viewBox="0 0 24 24"
+									aria-hidden="true"
+									focusable="false"
+								>
 									<use href="#icon-close"></use>
 								</svg>
 							</button>
@@ -784,8 +860,15 @@
 					></div>
 					<div class="product-detail" id="product-detail" hidden></div>
 					<div class="catalog-note">
-						<button class="catalog-note-close" type="button" data-i18n-aria="catalogNoteClose" aria-label="Ескертуді жасыру">
-							<svg class="icon-svg" aria-hidden="true" focusable="false"><use href="#icon-close"></use></svg>
+						<button
+							class="catalog-note-close"
+							type="button"
+							data-i18n-aria="catalogNoteClose"
+							aria-label="Ескертуді жасыру"
+						>
+							<svg class="icon-svg" aria-hidden="true" focusable="false">
+								<use href="#icon-close"></use>
+							</svg>
 						</button>
 						<svg
 							class="icon-svg note-star"
@@ -797,7 +880,11 @@
 						<p data-i18n="catalogNote">
 							Баға өлшем мен материалға қарай нақтыланады.
 						</p>
-						<a href="https://wa.me/77087211565" target="_blank" rel="noopener"
+						<a
+							href="https://wa.me/77087211565"
+							data-site-whatsapp
+							target="_blank"
+							rel="noopener"
 							><span data-i18n="catalogAsk">Бағасын сұрау</span
 							><svg
 								class="icon-svg"
@@ -809,6 +896,50 @@
 						></a>
 					</div>
 				</div>
+			</dialog>
+
+			<dialog
+				class="photo-viewer"
+				id="photo-viewer"
+				data-i18n-aria="photoViewer"
+				aria-label="Фотоны толық экранда қарау"
+			>
+				<button
+					class="photo-viewer-close"
+					type="button"
+					data-i18n-aria="photoClose"
+					aria-label="Жабу"
+				>
+					<svg class="icon-svg" aria-hidden="true" focusable="false">
+						<use href="#icon-close"></use>
+					</svg>
+				</button>
+				<button
+					class="photo-viewer-nav photo-viewer-prev"
+					type="button"
+					data-photo-prev
+					data-i18n-aria="photoPrev"
+					aria-label="Алдыңғы фото"
+				>
+					<svg class="icon-svg" aria-hidden="true" focusable="false">
+						<use href="#arrow-left"></use>
+					</svg>
+				</button>
+				<div class="photo-viewer-stage">
+					<img id="photo-viewer-image" alt="" draggable="false" />
+					<span class="photo-viewer-count" id="photo-viewer-count"></span>
+				</div>
+				<button
+					class="photo-viewer-nav photo-viewer-next"
+					type="button"
+					data-photo-next
+					data-i18n-aria="photoNext"
+					aria-label="Келесі фото"
+				>
+					<svg class="icon-svg" aria-hidden="true" focusable="false">
+						<use href="#arrow-right"></use>
+					</svg>
+				</button>
 			</dialog>
 
 			<section class="contact-section" id="contacts">
@@ -829,6 +960,7 @@
 						<a
 							class="button button-light"
 							href="https://wa.me/77087211565"
+							data-site-whatsapp
 							target="_blank"
 							rel="noopener"
 							><span data-i18n="contactCta">WhatsApp-та жазу</span
@@ -843,7 +975,7 @@
 					</div>
 					<div class="contact-side">
 						<div class="contact-brand">
-							<img src="assets/images/hit-stroi-logo.png" alt="" />
+							<img src="assets/images/hit-stroi-logo.webp" alt="" />
 							<div><b>HIT STROI</b><span>SHYMKENT</span></div>
 						</div>
 						<a class="contact-method" href="tel:+77087211565"
