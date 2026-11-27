@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nurmax.asia — Web Developer</title>
+  <meta name="description" content="Nurmax.asia — веб-разработчик. WordPress, Front-End, PHP, JavaScript. Создаю быстрые и красивые сайты.">
+  <meta name="theme-color" content="#050807">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Michroma&family=Manrope:wght@300;400;500;600;700;800&family=Unbounded:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Base -->
+  <link rel="stylesheet" href="css/base/variables.css">
+  <link rel="stylesheet" href="css/base/reset.css">
+  <link rel="stylesheet" href="css/base/animations.css">
+  <link rel="stylesheet" href="css/base/sections.css">
+  <!-- Components -->
+  <link rel="stylesheet" href="css/components/buttons.css">
+  <link rel="stylesheet" href="css/components/cursor.css">
+  <link rel="stylesheet" href="css/components/effects.css">
+  <!-- Layout -->
+  <link rel="stylesheet" href="css/layout/loader.css">
+  <link rel="stylesheet" href="css/layout/nav.css">
+  <link rel="stylesheet" href="css/layout/mobile-menu.css">
+  <link rel="stylesheet" href="css/layout/footer.css">
+  <!-- Sections -->
+  <link rel="stylesheet" href="css/sections/hero.css">
+  <link rel="stylesheet" href="css/sections/marquee.css">
+  <link rel="stylesheet" href="css/sections/about.css">
+  <link rel="stylesheet" href="css/sections/services.css">
+  <link rel="stylesheet" href="css/sections/projects.css">
+  <link rel="stylesheet" href="css/sections/process.css">
+  <link rel="stylesheet" href="css/sections/contact.css">
+</head>
+<body class="loading">
+
+  <!-- ===== SVG logo symbol ===== -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <linearGradient id="g-white" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#aab6af"/>
+      </linearGradient>
+      <linearGradient id="g-green" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#2bffb4"/><stop offset="1" stop-color="#00a870"/>
+      </linearGradient>
+      <symbol id="m-logo" viewBox="0 0 240 150">
+        <polygon points="0,14 28,60 28,150 0,150" fill="url(#g-white)"/>
+        <polygon points="105,150 165,0 195,0 195,150 168,150 168,68 135,150" fill="url(#g-white)"/>
+        <polygon points="0,0 34,0 125,150 91,150" fill="url(#g-green)"/>
+        <rect x="212" y="124" width="26" height="26" fill="#00D68F"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <!-- ===== Preloader ===== -->
+  <div class="loader" id="loader">
+    <div class="loader-inner">
+      <svg class="loader-logo" viewBox="-4 -4 248 158">
+        <polygon class="draw w" points="0,14 28,60 28,150 0,150"/>
+        <polygon class="draw w" points="105,150 165,0 195,0 195,150 168,150 168,68 135,150"/>
+        <polygon class="draw g" points="0,0 34,0 125,150 91,150"/>
+        <rect class="draw g dot" x="212" y="124" width="26" height="26"/>
+      </svg>
+      <div class="loader-word">NURMAX<span>.ASIA</span></div>
+      <div class="loader-bar"><span id="loader-bar"></span></div>
+      <div class="loader-count"><span id="loader-count">0</span>%</div>
+    </div>
+    <div class="loader-panel p1"></div>
+    <div class="loader-panel p2"></div>
+  </div>
+
+  <!-- ===== Cursor / FX ===== -->
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"><div class="cursor-ring-inner"><span class="cursor-label"></span></div></div>
+  <div class="scroll-progress" id="scroll-progress"></div>
+  <div class="noise" aria-hidden="true"></div>
+
+  <!-- ===== Navigation ===== -->
+  <header class="nav" id="nav">
+    <div class="container nav-inner">
+      <a href="#home" class="nav-logo" aria-label="Nurmax.asia — на главную">
+        <svg><use href="#m-logo"/></svg>
+        <span class="nav-word">NURMAX<em>.ASIA</em></span>
+      </a>
+      <nav class="nav-links" id="nav-links">
+        <a href="#about" data-text="Обо мне"><span>Обо мне</span></a>
+        <a href="#services" data-text="Услуги"><span>Услуги</span></a>
+        <a href="#projects" data-text="Работы"><span>Работы</span></a>
+        <a href="#process" data-text="Процесс"><span>Процесс</span></a>
+        <a href="#contact" data-text="Контакты"><span>Контакты</span></a>
+      </nav>
+      <a href="#contact" class="btn btn-small magnetic nav-cta"><span>Обсудить проект</span></a>
+      <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobile-menu">
+        <span class="burger-label"><span>Меню</span><span>Закрыть</span></span>
+        <span class="burger-icon"><i></i><i></i><i></i></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== Mobile menu ===== -->
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <div class="mm-bg">
+      <div class="mm-grid"></div>
+      <div class="mm-glow"></div>
+      <svg class="mm-mark" aria-hidden="true"><use href="#m-logo"/></svg>
+    </div>
+    <div class="mm-inner">
+      <div class="mm-caption"><span>Навигация</span><span>05 разделов</span></div>
+      <nav class="mm-links">
+        <a href="#about" style="--i:0"><span class="mm-row"><span class="mm-num">01</span><span class="mm-text" data-text="Обо мне">Обо мне</span><svg class="mm-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+        <a href="#services" style="--i:1"><span class="mm-row"><span class="mm-num">02</span><span class="mm-text" data-text="Услуги">Услуги</span><svg class="mm-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+        <a href="#projects" style="--i:2"><span class="mm-row"><span class="mm-num">03</span><span class="mm-text" data-text="Работы">Работы</span><svg class="mm-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+        <a href="#process" style="--i:3"><span class="mm-row"><span class="mm-num">04</span><span class="mm-text" data-text="Процесс">Процесс</span><svg class="mm-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+        <a href="#contact" style="--i:4"><span class="mm-row"><span class="mm-num">05</span><span class="mm-text" data-text="Контакты">Контакты</span><svg class="mm-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+      </nav>
+      <div class="mm-footer">
+        <div class="mm-status"><span class="pulse"></span>Открыт к новым проектам</div>
+        <div class="mm-socials">
+          <a href="https://t.me/Al_NurMax" target="_blank" rel="noopener">Telegram</a>
+          <a href="https://wa.me/77475022407" target="_blank" rel="noopener">WhatsApp</a>
+          <a href="https://github.com/nurmax04" target="_blank" rel="noopener">GitHub</a>
+        </div>
+        <a href="#contact" class="mm-cta">Обсудить проект <svg viewBox="0 0 24 24" width="18" height="18"><path d="M7 17 17 7M8 7h9v9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="home">
+      <canvas id="bg-canvas"></canvas>
+      <div class="hero-glow"></div>
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <div class="hero-badge intro" style="--d:0s"><span class="pulse"></span>Открыт для новых проектов</div>
+          <h1 class="hero-title" aria-label="Создаю сайты, которые продают">
+            <span class="line" data-split>Создаю сайты,</span>
+            <span class="line" data-split>которые</span>
+            <span class="line"><span class="line-inner"><span class="rotator" id="rotator">продают</span><span class="accent-dot">.</span></span></span>
+          </h1>
+          <p class="hero-sub intro" style="--d:.9s">
+            WordPress, Front-End, PHP и JavaScript — превращаю идеи в&nbsp;быстрые, красивые и&nbsp;надёжные веб-продукты, которые приносят результат.
+          </p>
+          <div class="hero-cta intro" style="--d:1.05s">
+            <a href="#projects" class="btn btn-primary magnetic"><span>Смотреть работы
+              <svg viewBox="0 0 24 24" width="18" height="18"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+            <a href="#contact" class="btn btn-ghost magnetic"><span>Связаться</span></a>
+          </div>
+        </div>
+
+        <div class="hero-visual intro-scale" id="hero-visual">
+          <div class="logo-stage" id="logo-stage">
+            <div class="grid-construct"></div>
+            <div class="ring r1"></div>
+            <div class="ring r2"></div>
+            <div class="ring r3"></div>
+            <div class="logo-glow"></div>
+            <svg class="hero-logo"><use href="#m-logo"/></svg>
+            <span class="chip c1">&lt;/&gt; JavaScript</span>
+            <span class="chip c2">WordPress</span>
+            <span class="chip c3">PHP</span>
+            <span class="chip c4">Front-End</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-bottom container intro" style="--d:1.3s">
+        <span class="mono">WEB DEVELOPER · KAZAKHSTAN</span>
+        <a href="#about" class="scroll-down"><span class="mouse"><span></span></span>Листайте вниз</a>
+        <span class="mono">© 2026 NURMAX.ASIA</span>
+      </div>
+    </section>
+
+    <!-- ===== MARQUEE ===== -->
+    <section class="marquee-wrap" aria-label="Технологии">
+      <div class="marquee">
+        <div class="marquee-track">
+          <span>HTML5</span><i>✦</i><span>CSS3</span><i>✦</i><span>JavaScript</span><i>✦</i><span>PHP</span><i>✦</i><span>WordPress</span><i>✦</i><span>Elementor</span><i>✦</i><span>Tilda</span><i>✦</i><span>WooCommerce</span><i>✦</i>
+          <span>HTML5</span><i>✦</i><span>CSS3</span><i>✦</i><span>JavaScript</span><i>✦</i><span>PHP</span><i>✦</i><span>WordPress</span><i>✦</i><span>Elementor</span><i>✦</i><span>Tilda</span><i>✦</i><span>WooCommerce</span><i>✦</i>
+        </div>
+      </div>
+      <div class="marquee reverse outline">
+        <div class="marquee-track">
+          <span>Скорость</span><i>●</i><span>Дизайн</span><i>●</i><span>Код</span><i>●</i><span>Результат</span><i>●</i><span>Скорость</span><i>●</i><span>Дизайн</span><i>●</i><span>Код</span><i>●</i><span>Результат</span><i>●</i>
+          <span>Скорость</span><i>●</i><span>Дизайн</span><i>●</i><span>Код</span><i>●</i><span>Результат</span><i>●</i><span>Скорость</span><i>●</i><span>Дизайн</span><i>●</i><span>Код</span><i>●</i><span>Результат</span><i>●</i>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="section-label" data-reveal><span>01</span> Обо мне</div>
+        <p class="about-text" id="about-text">
+          Nurmax — это веб-разработчик, который делает сайты не просто красивыми, а работающими на бизнес. Чистый код, продуманный интерфейс и внимание к каждой детали — от первого пикселя до последней строки на сервере.
+        </p>
+        <div class="stats">
+          <div class="stat" data-reveal style="--d:0s"><b><span data-count="8">0</span></b><small>технологий в работе</small></div>
+          <div class="stat" data-reveal style="--d:.1s"><b><span data-count="6">0</span></b><small>направлений услуг</small></div>
+          <div class="stat" data-reveal style="--d:.2s"><b><span data-count="4">0</span></b><small>проекта в портфолио</small></div>
+          <div class="stat" data-reveal style="--d:.3s"><b><span data-count="100">0</span>%</b><small>адаптивная вёрстка</small></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SERVICES ===== -->
+    <section class="section services" id="services">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-label" data-reveal><span>02</span> Услуги</div>
+          <h2 class="section-title" data-reveal>Что я <em>делаю</em></h2>
+        </div>
+        <div class="services-grid">
+          <article class="service-card" data-spotlight data-reveal style="--d:0s">
+            <div class="service-num">01</div>
+            <div class="service-icon">
+              <svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="18" /><path d="M8 24h32M24 6c6 6 6 30 0 36M24 6c-6 6-6 30 0 36"/></svg>
+            </div>
+            <h3>WordPress и Elementor</h3>
+            <p>Сайты для бизнеса на WordPress с удобным управлением контентом и гибкой настройкой дизайна.</p>
+            <ul><li>WordPress</li><li>Elementor Pro</li><li>Сайты для бизнеса</li></ul>
+          </article>
+          <article class="service-card" data-spotlight data-reveal style="--d:.1s">
+            <div class="service-num">02</div>
+            <div class="service-icon">
+              <svg viewBox="0 0 48 48"><rect x="6" y="9" width="36" height="28" rx="3"/><path d="M6 16h36M18 44h12M24 37v7M19 24l-4 4 4 4M29 24l4 4-4 4"/></svg>
+            </div>
+            <h3>Посадочные страницы</h3>
+            <p>Лендинги, которые ясно показывают предложение и подсказывают посетителю следующий шаг.</p>
+            <ul><li>HTML / CSS / JS</li><li>Tilda</li><li>Адаптив</li></ul>
+          </article>
+          <article class="service-card" data-spotlight data-reveal style="--d:.2s">
+            <div class="service-num">03</div>
+            <div class="service-icon">
+              <svg viewBox="0 0 48 48"><ellipse cx="24" cy="11" rx="15" ry="5"/><path d="M9 11v13c0 2.8 6.7 5 15 5s15-2.2 15-5V11M9 24v13c0 2.8 6.7 5 15 5s15-2.2 15-5V24"/></svg>
+            </div>
+            <h3>Интернет-магазины</h3>
+            <p>Каталог товаров, корзина и оформление заказов на WordPress и WooCommerce.</p>
+            <ul><li>WooCommerce</li><li>Каталог</li><li>Корзина</li></ul>
+          </article>
+          <article class="service-card" data-spotlight data-reveal style="--d:.3s">
+            <div class="service-num">04</div>
+            <div class="service-icon">
+              <svg viewBox="0 0 48 48"><path d="M26 4 10 27h13l-2 17 17-24H25z"/></svg>
+            </div>
+            <h3>Front-End и PHP</h3>
+            <p>Адаптивная вёрстка, интерактивные элементы и доработки, которые легко поддерживать.</p>
+            <ul><li>JavaScript</li><li>PHP</li><li>Адаптив</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section class="section projects" id="projects">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-label" data-reveal><span>03</span> Избранные работы</div>
+          <h2 class="section-title" data-reveal>Проекты, которыми <em>горжусь</em></h2>
+        </div>
+        <div class="projects-grid">
+          <!-- ===== Featured: реальный клиент ===== -->
+          <a href="https://hitstroi.asia/" target="_blank" rel="noopener" class="project featured" data-cursor="Открыть" data-reveal>
+            <div class="project-media mf">
+              <div class="feat-copy">
+                <span class="feat-badge"><span class="pulse"></span>Реальный клиент · Первый проект</span>
+                <div class="feat-title">HIT <em>STROI</em><i>.</i></div>
+                <p class="feat-desc">Сайт мебельной мастерской из Шымкента: каталог, этапы работы, видео-отзывы клиентов и заявки в WhatsApp.</p>
+                <ul class="feat-facts">
+                  <li><b>KZ / RU</b><span>два языка</span></li>
+                  <li><b>5</b><span>разделов каталога</span></li>
+                  <li><b>100%</b><span>адаптив</span></li>
+                </ul>
+                <span class="feat-link">Открыть сайт <svg viewBox="0 0 24 24" width="16" height="16"><path d="M7 17 17 7M8 7h9v9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              </div>
+              <div class="feat-devices" data-tilt-target>
+                <div class="laptop">
+                  <div class="mock-bar"><i></i><i></i><i></i><span>hitstroi.asia</span></div>
+                  <div class="shot"><img src="assets/projects/hitstroi.jpg" alt="Сайт HIT STROI — десктоп" loading="lazy"></div>
+                </div>
+                <div class="phone">
+                  <div class="phone-notch"></div>
+                  <img src="assets/projects/hitstroi-mobile.jpg" alt="Сайт HIT STROI — мобильная версия" loading="lazy">
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <div><h3>HIT STROI — мебель на заказ в Шымкенте</h3><p>Мой первый коммерческий проект для реального клиента</p></div>
+              <span class="project-year live">LIVE</span>
+            </div>
+          </a>
+
+          <!-- ===== Демо-концепты ===== -->
+          <a href="https://nurmax04.github.io/Homework/Dyson/index.html" target="_blank" rel="noopener" class="project" data-tilt data-cursor="Открыть" data-reveal style="--d:0s">
+            <div class="project-media m-dyson">
+              <div class="mock shot-mock">
+                <div class="mock-bar"><i></i><i></i><i></i><span>dyson-catalog</span></div>
+                <div class="shot"><img src="assets/projects/dyson.jpg" alt="Концепт каталога Dyson" loading="lazy"></div>
+              </div>
+            </div>
+            <div class="project-info">
+              <div><h3>Каталог Dyson</h3><p>Каталог с подборками и карточками товаров · HTML · CSS · JS</p></div>
+              <span class="project-year">DEMO</span>
+            </div>
+          </a>
+          <a href="https://nurmax.asia/domashka_03/" target="_blank" rel="noopener" class="project" data-tilt data-cursor="Открыть" data-reveal style="--d:.1s">
+            <div class="project-media m-fashion">
+              <div class="mock shot-mock">
+                <div class="mock-bar"><i></i><i></i><i></i><span>hazze-fashion</span></div>
+                <div class="shot"><img src="assets/projects/fashion.jpg" alt="Концепт модного блога Hazze на WordPress" loading="lazy"></div>
+              </div>
+            </div>
+            <div class="project-info">
+              <div><h3>Мода и стиль</h3><p>Многостраничный модный блог · WordPress · CSS · PHP</p></div>
+              <span class="project-year">DEMO</span>
+            </div>
+          </a>
+          <a href="https://website481020.nicepage.io/ru/Landing.html" target="_blank" rel="noopener" class="project" data-tilt data-cursor="Открыть" data-reveal style="--d:.2s">
+            <div class="project-media m-el">
+              <div class="mock shot-mock">
+                <div class="mock-bar"><i></i><i></i><i></i><span>seo-agency</span></div>
+                <div class="el-body">
+                  <div class="el-wave"></div>
+                  <div class="el-text"><b></b><b></b><b class="s"></b><b class="s"></b><span class="el-btn"></span></div>
+                  <div class="el-card"><i></i><i></i><i></i></div>
+                  <div class="el-purple"><b></b><b class="s"></b><b class="s"></b></div>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <div><h3>Сайт на Elementor</h3><p>Многостраничный сайт с формами и навигацией · Elementor Pro</p></div>
+              <span class="project-year">DEMO</span>
+            </div>
+          </a>
+        </div>
+        <p class="projects-note" data-reveal>↗ Демо — учебные концепты. HitStroi — реальный проект для клиента.</p>
+      </div>
+    </section>
+
+    <!-- ===== PROCESS ===== -->
+    <section class="section process" id="process">
+      <div class="container process-inner">
+        <div class="process-head">
+          <div class="section-label" data-reveal><span>04</span> Процесс</div>
+          <h2 class="section-title" data-reveal>Как мы <em>работаем</em></h2>
+          <p class="process-note" data-reveal>Прозрачно, по шагам и в срок. Вы всегда знаете, на каком этапе проект.</p>
+        </div>
+        <div class="timeline" id="timeline">
+          <div class="timeline-line"><span id="timeline-fill"></span></div>
+          <div class="step" data-reveal><div class="step-dot"></div><span class="step-n">01</span><h3>Знакомство и бриф</h3><p>Разбираемся в задаче, целях и аудитории. Фиксируем сроки и бюджет.</p></div>
+          <div class="step" data-reveal><div class="step-dot"></div><span class="step-n">02</span><h3>Прототип и дизайн</h3><p>Структура страниц и визуальная концепция, согласованная с вами.</p></div>
+          <div class="step" data-reveal><div class="step-dot"></div><span class="step-n">03</span><h3>Разработка</h3><p>Чистый код, адаптив, анимации и интеграции. Показываю промежуточные результаты.</p></div>
+          <div class="step" data-reveal><div class="step-dot"></div><span class="step-n">04</span><h3>Запуск и поддержка</h3><p>Тестирование, перенос на хостинг, обучение работе с сайтом и дальнейшая поддержка.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="section contact" id="contact">
+      <div class="contact-glow"></div>
+      <div class="contact-grid-bg"></div>
+      <div class="container">
+        <div class="contact-top">
+          <div class="contact-head">
+            <div class="section-label" data-reveal><span>05</span> Контакты</div>
+            <h2 class="contact-title">
+              <span class="ct-line"><span class="ct-in" data-reveal>Есть идея?</span></span>
+              <span class="ct-line"><span class="ct-in" data-reveal style="--d:.1s">Давайте <em>обсудим</em><i class="accent-dot">.</i></span></span>
+            </h2>
+            <p class="contact-lead" data-reveal style="--d:.2s">Расскажите о задаче — обсудим идею, сроки и формат работы. Напишите в удобный мессенджер или на почту.</p>
+            <div class="contact-status" data-reveal style="--d:.3s">
+              <span class="cs-item"><span class="pulse"></span>Открыт к новым проектам</span>
+              <span class="cs-item">Казахстан · <b id="local-time">--:--</b></span>
+            </div>
+          </div>
+          <a href="https://t.me/Al_NurMax" target="_blank" rel="noopener" class="contact-orb magnetic" data-cursor="Написать" data-reveal style="--d:.2s" aria-label="Написать в Telegram">
+            <span class="orb-inner">
+              <svg class="orb-text" viewBox="0 0 200 200" aria-hidden="true">
+                <defs><path id="orb-circle" d="M100 100m-78 0a78 78 0 1 1 156 0a78 78 0 1 1-156 0"/></defs>
+                <text><textPath href="#orb-circle" textLength="486" lengthAdjust="spacing">НАПИСАТЬ МНЕ • NURMAX.ASIA • </textPath></text>
+              </svg>
+              <span class="orb-core"><svg viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
+            </span>
+          </a>
+        </div>
+
+        <div class="contact-cards">
+          <a href="https://wa.me/77475022407" target="_blank" rel="noopener" class="cc" data-spotlight data-reveal style="--d:0s">
+            <span class="cc-icon"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.8 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.1-1.9-.1-.4-.1-1-.3-1.7-.6-3-1.3-4.9-4.3-5-4.5-.2-.2-1.2-1.6-1.2-3s.8-2.2 1-2.5c.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.3.5-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l2 1c.3.1.5.2.5.3.1.1.1.6-.1 1.3z"/></svg></span>
+            <span class="cc-label">WhatsApp</span>
+            <span class="cc-value">+7 747 502 24 07</span>
+            <svg class="cc-arrow" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></svg>
+          </a>
+          <a href="https://t.me/Al_NurMax" target="_blank" rel="noopener" class="cc" data-spotlight data-reveal style="--d:.08s">
+            <span class="cc-icon"><svg viewBox="0 0 24 24"><path d="M21.5 4.5 2.8 11.7c-1 .4-1 1.6.1 1.9l4.7 1.5 1.8 5.6c.3.8 1.3 1 1.9.4l2.6-2.5 4.9 3.6c.8.6 1.9.1 2.1-.9L23.8 6c.3-1.3-1-2.3-2.3-1.5zM9.6 14.5l9-6.6-7 7.6-.3 3.3z"/></svg></span>
+            <span class="cc-label">Telegram</span>
+            <span class="cc-value">@Al_NurMax</span>
+            <svg class="cc-arrow" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></svg>
+          </a>
+          <button class="cc" id="copy-mail" data-mail="nuradeveloper04@gmail.com" data-cursor="Копировать" data-spotlight data-reveal style="--d:.16s">
+            <span class="cc-icon"><svg viewBox="0 0 24 24"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm1 2.4V17h16V7.4l-8 5.3-8-5.3zM5.6 7 12 11.2 18.4 7H5.6z"/></svg></span>
+            <span class="cc-label">Email · нажмите, чтобы скопировать</span>
+            <span class="cc-value cc-mail">nuradeveloper04@gmail.com</span>
+            <svg class="cc-arrow" viewBox="0 0 24 24"><path d="M9 9h10v10H9zM5 15V5h10"/></svg>
+          </button>
+          <a href="https://github.com/nurmax04" target="_blank" rel="noopener" class="cc" data-spotlight data-reveal style="--d:.24s">
+            <span class="cc-icon"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.4-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.6 2.4 1.1 2.9.8.1-.7.4-1.1.6-1.3-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.7 0 0 .8-.3 2.8 1a9.5 9.5 0 0 1 5 0c1.9-1.3 2.8-1 2.8-1 .5 1.4.2 2.4.1 2.7.6.7 1 1.6 1 2.7 0 3.9-2.3 4.7-4.6 5 .4.3.7.9.7 1.9V21c0 .3.2.6.7.5A10 10 0 0 0 12 2z"/></svg></span>
+            <span class="cc-label">GitHub</span>
+            <span class="cc-value">nurmax04</span>
+            <svg class="cc-arrow" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="giant-word" id="giant-word" aria-hidden="true">
+        <span class="gw-outline">NURMAX</span>
+        <span class="gw-fill">NURMAX</span>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#home" class="nav-logo"><svg><use href="#m-logo"/></svg><span class="nav-word">NURMAX<em>.ASIA</em></span></a>
+      <span class="mono">© <span id="year">2026</span> · Сделано с любовью к коду</span>
+      <a href="#home" class="to-top magnetic" aria-label="Наверх"><svg viewBox="0 0 24 24" width="18" height="18"><path d="M12 19V5M6 11l6-6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast">Почта скопирована ✓</div>
+
+  <!-- Core (must be first) -->
+  <script src="js/core.js"></script>
+  <!-- Layout -->
+  <script src="js/layout/loader.js"></script>
+  <script src="js/layout/nav.js"></script>
+  <script src="js/layout/mobile-menu.js"></script>
+  <script src="js/layout/footer.js"></script>
+  <!-- Sections -->
+  <script src="js/sections/hero.js"></script>
+  <script src="js/sections/about.js"></script>
+  <script src="js/sections/projects.js"></script>
+  <script src="js/sections/process.js"></script>
+  <script src="js/sections/contact.js"></script>
+  <!-- Components (after sections, so they see the final DOM) -->
+  <script src="js/components/reveal.js"></script>
+  <script src="js/components/spotlight.js"></script>
+  <script src="js/components/magnetic.js"></script>
+  <script src="js/components/cursor.js"></script>
+  <script src="js/components/scroll-progress.js"></script>
+</body>
+</html>

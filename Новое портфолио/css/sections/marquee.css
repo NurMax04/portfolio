@@ -1,0 +1,12 @@
+/* =========================================================
+   Section: Technologies marquee
+   ========================================================= */
+.marquee-wrap { padding: 40px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); overflow: hidden; position: relative; background: var(--bg-2); }
+.marquee { display: flex; overflow: hidden; transform: rotate(-1.5deg); margin: 0 -2%; }
+.marquee.reverse { transform: rotate(1deg); margin-top: 14px; }
+.marquee-track { display: flex; align-items: center; gap: 36px; flex-shrink: 0; padding-right: 36px; animation: marquee 32s linear infinite; font-family: var(--f-head); font-size: clamp(28px, 4vw, 56px); font-weight: 600; white-space: nowrap; }
+.marquee.reverse .marquee-track { animation-direction: reverse; animation-duration: 40s; }
+.marquee-track i { font-style: normal; color: var(--green); font-size: .5em; }
+.marquee.outline span { color: transparent; -webkit-text-stroke: 1px rgba(241, 243, 241, .3); }
+.marquee:hover .marquee-track { animation-play-state: paused; }
+@keyframes marquee { to { transform: translateX(-50%); } }

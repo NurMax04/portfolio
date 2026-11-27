@@ -1,0 +1,89 @@
+/* =========================================================
+   Section 05: Contact
+   ========================================================= */
+.contact { overflow: hidden; padding-bottom: 0; }
+.contact-glow { position: absolute; left: 50%; bottom: -10%; width: 1100px; height: 700px; transform: translateX(-50%); border-radius: 50%; background: radial-gradient(circle, rgba(0, 214, 143, .2), transparent 62%); filter: blur(50px); pointer-events: none; animation: breathe 9s ease-in-out infinite; }
+.contact-grid-bg { position: absolute; inset: 0; pointer-events: none; background-image: linear-gradient(var(--line) 1px, transparent 1px), linear-gradient(90deg, var(--line) 1px, transparent 1px); background-size: 72px 72px; opacity: .5; mask-image: radial-gradient(ellipse at 50% 100%, #000 10%, transparent 60%); -webkit-mask-image: radial-gradient(ellipse at 50% 100%, #000 10%, transparent 60%); }
+.contact .container { position: relative; z-index: 2; }
+
+/* ---------- Heading ---------- */
+.contact-top { display: grid; grid-template-columns: 1fr auto; align-items: end; gap: 40px; margin-bottom: 70px; }
+.contact-title { font-family: var(--f-head); font-weight: 800; font-size: clamp(42px, 7.4vw, 120px); line-height: 1; letter-spacing: -.045em; margin-bottom: 30px; }
+.ct-line { display: block; overflow: hidden; padding-bottom: .06em; }
+.ct-in { display: inline-block; }
+.ct-in[data-reveal] { transform: translateY(105%); opacity: 1; }
+.ct-in[data-reveal].in { transform: none; }
+.ct-line em { font-style: normal; color: transparent; -webkit-text-stroke: 1.5px var(--green); transition: color .5s; }
+.ct-line em:hover { color: var(--green); }
+.contact-lead { max-width: 520px; color: var(--muted); font-size: 17px; margin-bottom: 26px; }
+.contact-status { display: flex; flex-wrap: wrap; gap: 10px; }
+.cs-item { display: inline-flex; align-items: center; gap: 10px; padding: 9px 16px; border-radius: 100px; border: 1px solid var(--line); background: rgba(10, 16, 14, .6); font-size: 13px; color: var(--muted); }
+.cs-item b { color: var(--text); font-family: var(--f-brand); font-weight: 400; font-size: 12px; letter-spacing: .1em; }
+
+/* ---------- Rotating orb ---------- */
+.contact-orb { position: relative; display: block; width: 210px; height: 210px; border-radius: 50%; }
+.orb-inner { position: absolute; inset: 0; display: grid; place-items: center; }
+.orb-text { position: absolute; inset: 0; width: 100%; height: 100%; animation: spin 16s linear infinite; }
+.orb-text text { font-family: var(--f-brand); font-size: 12px; fill: var(--text); }
+.orb-core { position: relative; width: 104px; height: 104px; border-radius: 50%; background: var(--green); display: grid; place-items: center; box-shadow: 0 0 0 0 rgba(0, 214, 143, .5); transition: transform .6s var(--ease), box-shadow .6s, background .4s; animation: orbPulse 2.6s ease-out infinite; }
+.orb-core svg { width: 34px; height: 34px; fill: none; stroke: #00140c; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; transition: transform .6s var(--ease); }
+.contact-orb:hover .orb-core { transform: scale(1.12); background: var(--text); }
+.contact-orb:hover .orb-core svg { transform: rotate(45deg); }
+.contact-orb:hover .orb-text { animation-duration: 5s; }
+@keyframes orbPulse { 0% { box-shadow: 0 0 0 0 rgba(0, 214, 143, .45); } 100% { box-shadow: 0 0 0 28px rgba(0, 214, 143, 0); } }
+
+/* ---------- Contact cards ---------- */
+.contact-cards { display: grid; grid-template-columns: 1fr 1fr 1.4fr 1fr; gap: 14px; }
+.cc {
+  --x: 50%; --y: 50%;
+  position: relative; display: flex; flex-direction: column; align-items: flex-start; gap: 6px; text-align: left;
+  min-height: 210px; padding: 26px; border-radius: 22px; overflow: hidden; isolation: isolate;
+  background: rgba(10, 16, 14, .75); border: 1px solid var(--line); backdrop-filter: blur(10px);
+  transition: border-color .4s, transform .6s var(--ease), color .4s;
+}
+/* Green fill grows from the cursor point (js/components/spotlight.js) */
+.cc::before { content: ''; position: absolute; inset: 0; z-index: -1; background: var(--green); clip-path: circle(0% at var(--x) var(--y)); transition: clip-path .7s var(--ease); }
+.cc::after { content: ''; position: absolute; inset: 0; z-index: -2; background: radial-gradient(400px circle at var(--x) var(--y), rgba(0, 214, 143, .12), transparent 45%); opacity: 0; transition: opacity .4s; }
+.cc:hover::after { opacity: 1; }
+.cc:hover::before { clip-path: circle(150% at var(--x) var(--y)); }
+.cc:hover { border-color: var(--green); color: #00140c; }
+.cc.in:hover { transform: translateY(-6px); }
+.cc-icon { width: 54px; height: 54px; border-radius: 16px; display: grid; place-items: center; background: var(--green-dim); margin-bottom: auto; transition: background .4s; }
+.cc-icon svg { width: 24px; height: 24px; fill: var(--green); transition: fill .4s; }
+.cc:hover .cc-icon { background: #00140c; }
+.cc-label { margin-top: 30px; font-size: 12px; color: var(--muted); transition: color .4s; }
+.cc:hover .cc-label { color: rgba(0, 20, 12, .7); }
+.cc-value { font-family: var(--f-head); font-size: clamp(15px, 1.3vw, 19px); font-weight: 600; letter-spacing: -.01em; word-break: break-all; }
+.cc-value.cc-mail { font-size: clamp(13px, 1.15vw, 17px); word-break: normal; overflow-wrap: anywhere; }
+.cc-arrow { position: absolute; top: 24px; right: 24px; width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; opacity: .5; transition: transform .6s var(--ease), opacity .4s; }
+.cc:hover .cc-arrow { transform: translate(3px, -3px) scale(1.15); opacity: 1; }
+
+/* ---------- Giant wordmark ---------- */
+.giant-word { position: relative; z-index: 1; margin-top: 90px; text-align: center; line-height: .8; font-family: var(--f-brand); font-size: 14.2vw; letter-spacing: -.01em; white-space: nowrap; user-select: none; overflow: hidden; padding-top: 2vw; }
+.gw-outline, .gw-fill { display: block; }
+.gw-outline { color: transparent; -webkit-text-stroke: 1px rgba(241, 243, 241, .14); }
+.gw-fill {
+  position: absolute; inset: 2vw 0 0; color: var(--green);
+  -webkit-mask-image: radial-gradient(240px circle at var(--mx, 50%) var(--my, 150%), #000 0%, transparent 70%);
+  mask-image: radial-gradient(240px circle at var(--mx, 50%) var(--my, 150%), #000 0%, transparent 70%);
+  text-shadow: 0 0 40px rgba(0, 214, 143, .5);
+}
+.giant-word::after { content: ''; position: absolute; left: 0; right: 0; bottom: 0; height: 40%; background: linear-gradient(transparent, var(--bg)); pointer-events: none; }
+
+@media (max-width: 960px) {
+  .contact-top { grid-template-columns: 1fr; }
+  .contact-orb { width: 170px; height: 170px; justify-self: end; margin-top: -20px; }
+  .orb-core { width: 84px; height: 84px; }
+  .contact-cards { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 600px) {
+  .contact-orb { justify-self: start; }
+  .contact-cards { grid-template-columns: 1fr; }
+  .cc { min-height: 0; display: grid; grid-template-columns: 48px 1fr; column-gap: 16px; row-gap: 2px; align-items: center; padding: 18px 54px 18px 18px; }
+  .cc-icon { grid-row: 1 / 3; margin-bottom: 0; width: 48px; height: 48px; }
+  .cc-label { margin-top: 0; align-self: end; }
+  .cc-value { align-self: start; }
+  .cc-value.cc-mail { font-size: 13px; }
+  .cc-arrow { top: 50%; margin-top: -12px; right: 20px; }
+  .giant-word { margin-top: 60px; }
+}

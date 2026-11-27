@@ -1,0 +1,21 @@
+/* =========================================================
+   Custom cursor (enabled by js/components/cursor.js)
+   ========================================================= */
+body.has-cursor, body.has-cursor a, body.has-cursor button { cursor: none; }
+
+.cursor-dot, .cursor-ring { position: fixed; top: 0; left: 0; z-index: 200; pointer-events: none; display: none; }
+body.has-cursor .cursor-dot, body.has-cursor .cursor-ring { display: block; }
+.cursor-dot { width: 6px; height: 6px; margin: -3px 0 0 -3px; border-radius: 50%; background: var(--green); }
+.cursor-ring { width: 40px; height: 40px; margin: -20px 0 0 -20px; }
+.cursor-ring-inner {
+  width: 100%; height: 100%; border-radius: 50%;
+  border: 1px solid rgba(0, 214, 143, .55);
+  display: grid; place-items: center;
+  transition: transform .45s var(--ease), background .3s, border-color .3s;
+}
+.cursor-label { font-size: 3.5px; font-weight: 700; letter-spacing: .05em; color: #00140c; opacity: 0; transition: opacity .2s; text-transform: uppercase; }
+
+body.cursor-hover .cursor-ring-inner { transform: scale(1.6); background: rgba(0, 214, 143, .1); border-color: var(--green); }
+body.cursor-label-on .cursor-ring-inner { transform: scale(2.4); background: var(--green); border-color: var(--green); }
+body.cursor-label-on .cursor-label { opacity: 1; }
+body.cursor-label-on .cursor-dot { opacity: 0; }

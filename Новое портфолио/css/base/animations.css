@@ -1,0 +1,18 @@
+/* =========================================================
+   Shared keyframes & entrance animations
+   ========================================================= */
+@keyframes breathe { 50% { transform: scale(1.15) translate(-3%, 4%); opacity: .7; } }
+@keyframes spin { to { rotate: 360deg; } }
+@keyframes float { 50% { translate: 0 -14px; } }
+@keyframes ping { to { transform: scale(3.5); opacity: 0; } }
+@keyframes blink { 50% { opacity: .2; } }
+
+/* Hero intro (after preloader) */
+.intro { opacity: 0; transform: translateY(30px); transition: opacity 1s var(--ease), transform 1s var(--ease); transition-delay: var(--d, 0s); }
+.loaded .intro { opacity: 1; transform: none; }
+.intro-scale { opacity: 0; transform: scale(.85); filter: blur(12px); transition: opacity 1.4s var(--ease) .3s, transform 1.6s var(--ease) .3s, filter 1.4s var(--ease) .3s; }
+.loaded .intro-scale { opacity: 1; transform: none; filter: none; }
+
+/* Reveal on scroll (js/components/reveal.js adds .in) */
+[data-reveal] { opacity: 0; transform: translateY(50px); transition: opacity 1.1s var(--ease), transform 1.1s var(--ease); transition-delay: var(--d, 0s); }
+[data-reveal].in { opacity: 1; transform: none; }

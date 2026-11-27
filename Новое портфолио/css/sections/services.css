@@ -1,0 +1,33 @@
+/* =========================================================
+   Section 02: Services
+   ========================================================= */
+.services-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.service-card {
+  --x: 50%; --y: 50%;
+  position: relative; padding: 34px 28px 30px; border-radius: 22px; background: var(--card); border: 1px solid var(--line);
+  overflow: hidden; isolation: isolate; min-height: 400px; display: flex; flex-direction: column;
+  transition: transform .5s var(--ease), border-color .4s, opacity 1.1s var(--ease);
+}
+/* Spotlight glow + glowing border (position set by js/components/spotlight.js) */
+.service-card::before { content: ''; position: absolute; inset: 0; z-index: -1; background: radial-gradient(500px circle at var(--x) var(--y), rgba(0, 214, 143, .14), transparent 40%); opacity: 0; transition: opacity .4s; }
+.service-card::after { content: ''; position: absolute; inset: 0; border-radius: inherit; padding: 1px; z-index: -1; background: radial-gradient(300px circle at var(--x) var(--y), var(--green), transparent 50%); -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); -webkit-mask-composite: xor; mask-composite: exclude; opacity: 0; transition: opacity .4s; }
+.service-card:hover::before, .service-card:hover::after { opacity: 1; }
+.service-card.in:hover { transform: translateY(-8px); }
+
+.service-num { font-family: var(--f-brand); font-size: 11px; color: var(--muted); letter-spacing: .2em; margin-bottom: 40px; }
+.service-icon { width: 64px; height: 64px; border-radius: 18px; display: grid; place-items: center; background: var(--green-dim); margin-bottom: 30px; transition: transform .6s var(--ease), background .4s; }
+.service-icon svg { width: 30px; height: 30px; fill: none; stroke: var(--green); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; transition: stroke .4s; }
+.service-card:hover .service-icon { transform: rotate(-8deg) scale(1.08); background: var(--green); }
+.service-card:hover .service-icon svg { stroke: #00140c; }
+.service-card h3 { font-family: var(--f-head); font-size: 21px; font-weight: 600; margin-bottom: 14px; letter-spacing: -.01em; }
+.service-card p { color: var(--muted); font-size: 15px; margin-bottom: 24px; }
+.service-card ul { list-style: none; display: flex; flex-wrap: wrap; gap: 6px; margin-top: auto; }
+.service-card li { font-size: 12px; padding: 5px 11px; border-radius: 100px; border: 1px solid var(--line); color: var(--muted); }
+
+@media (max-width: 1100px) {
+  .services-grid { grid-template-columns: repeat(2, 1fr); }
+  .service-card { min-height: 0; }
+}
+@media (max-width: 600px) {
+  .services-grid { grid-template-columns: 1fr; }
+}
