@@ -58,6 +58,26 @@
     })();
   }
 
+  /* Shrink the word if the longest one would not fit the title column */
+  function fitRotator() {
+    const line = rotator.closest('.rot-line');
+    const probe = document.createElement('span');
+    const cs = getComputedStyle(line);
+    probe.style.cssText = `position:absolute;visibility:hidden;white-space:nowrap;font-family:${cs.fontFamily};font-weight:${cs.fontWeight};font-size:${cs.fontSize};letter-spacing:${cs.letterSpacing}`;
+    document.body.appendChild(probe);
+    let widest = 0;
+    rotWords.forEach(w => { probe.textContent = w; widest = Math.max(widest, probe.offsetWidth); });
+    probe.remove();
+    const scale = widest ? Math.min(1, (line.clientWidth - 4) / widest) : 1;
+    line.style.setProperty('--rot-scale', scale.toFixed(3));
+  }
+  if (rotator) {
+    fitRotator();
+    if (document.fonts) document.fonts.ready.then(fitRotator);
+    let ft;
+    addEventListener('resize', () => { clearTimeout(ft); ft = setTimeout(fitRotator, 150); });
+  }
+
   if (rotator && !reduce) {
     document.addEventListener('nx:loaded', () => {
       setTimeout(() => {

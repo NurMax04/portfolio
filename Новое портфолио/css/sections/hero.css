@@ -24,7 +24,11 @@
 .hero-title .char { display: inline-block; transform: translateY(115%) rotate(8deg); transition: transform 1s var(--ease); transition-delay: calc(var(--i) * .03s + .1s); }
 .hero-title .line-inner { display: inline-block; transform: translateY(115%); transition: transform 1s var(--ease) .6s; }
 .loaded .hero-title .char, .loaded .hero-title .line-inner { transform: none; }
-.rotator { color: var(--green); background: linear-gradient(100deg, var(--green) 20%, var(--green-2) 50%, var(--green) 80%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+/* Rotating word line is isolated (fixed height + containment): the changing word
+   never re-lays out the rest of the page. --rot-scale (js/sections/hero.js)
+   shrinks the word so the longest one always fits the column. */
+.hero-title .rot-line { height: 1.1em; contain: strict; }
+.rotator { display: inline-block; white-space: nowrap; font-size: calc(1em * var(--rot-scale, 1)); color: var(--green); background: linear-gradient(100deg, var(--green) 20%, var(--green-2) 50%, var(--green) 80%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
 .rotator .scr { color: var(--muted); -webkit-text-fill-color: var(--muted); opacity: .8; }
 .hero-sub { max-width: 520px; font-size: clamp(16px, 1.3vw, 18px); color: var(--muted); margin-bottom: 40px; }
 .hero-cta { display: flex; gap: 14px; flex-wrap: wrap; }
