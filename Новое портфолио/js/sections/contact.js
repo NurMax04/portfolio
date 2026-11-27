@@ -26,14 +26,18 @@
     });
     giant.addEventListener('mouseleave', () => giant.style.setProperty('--my', '150%'));
 
-    if (!fine) { // touch devices: the highlight sweeps by itself
-      let t = 0;
-      (function sweep() {
+    if (!fine) { // touch devices: the highlight sweeps by itself, only while visible
+      let t = 0, raf = 0;
+      const sweep = () => {
         t += 0.006;
         giant.style.setProperty('--mx', `${50 + Math.sin(t) * 45}%`);
-        giant.style.setProperty('--my', '55%');
-        requestAnimationFrame(sweep);
-      })();
+        raf = requestAnimationFrame(sweep);
+      };
+      giant.style.setProperty('--my', '55%');
+      new IntersectionObserver(([e]) => {
+        cancelAnimationFrame(raf);
+        if (e.isIntersecting) raf = requestAnimationFrame(sweep);
+      }).observe(giant);
     }
   }
 

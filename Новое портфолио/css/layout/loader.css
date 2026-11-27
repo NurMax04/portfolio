@@ -9,10 +9,10 @@
 
 /* Logo draw-in */
 .loader-logo { width: 150px; overflow: visible; }
-.loader-logo .draw { fill: transparent; stroke-width: 1.5; stroke-dasharray: 700; stroke-dashoffset: 700; animation: draw 1.4s var(--ease) forwards, fillIn .6s ease forwards 1.1s; }
+.loader-logo .draw { fill: transparent; stroke-width: 1.5; stroke-dasharray: 700; stroke-dashoffset: 700; animation: draw .8s var(--ease) forwards, fillIn .35s ease forwards .6s; }
 .loader-logo .w { stroke: #F1F3F1; color: #F1F3F1; }
-.loader-logo .g { stroke: var(--green); color: var(--green); filter: drop-shadow(0 0 10px rgba(0, 214, 143, .6)); animation-delay: .2s, 1.2s; }
-.loader-logo .dot { animation-delay: .5s, 1.3s; }
+.loader-logo .g { stroke: var(--green); color: var(--green); filter: drop-shadow(0 0 10px rgba(0, 214, 143, .6)); animation-delay: .1s, .7s; }
+.loader-logo .dot { animation-delay: .25s, .75s; }
 @keyframes draw { to { stroke-dashoffset: 0; } }
 @keyframes fillIn { to { fill: currentColor; } }
 
@@ -20,7 +20,7 @@
 .loader-word span { color: var(--muted); }
 .loader-bar { width: 200px; height: 1px; background: var(--line); overflow: hidden; }
 .loader-bar span { display: block; height: 100%; width: 100%; background: var(--green); transform-origin: 0; transform: scaleX(0); box-shadow: 0 0 10px var(--green); }
-.loader-count { font-family: var(--f-brand); font-size: 11px; color: var(--muted); letter-spacing: .2em; }
+.loader-count { font-family: var(--f-brand); font-size: 11px; color: var(--muted); letter-spacing: .2em; min-width: 7ch; text-align: center; font-variant-numeric: tabular-nums; contain: layout paint; }
 
 /* Exit */
 .loader.done .loader-inner { opacity: 0; transform: translateY(-30px) scale(.95); }

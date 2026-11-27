@@ -2,7 +2,8 @@
    Reset & global
    ========================================================= */
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+/* overflow-anchor: none — Chrome's scroll anchoring was cutting smooth anchor scrolls short */
+html { scroll-behavior: smooth; overflow-anchor: none; }
 body {
   background: var(--bg);
   color: var(--text);

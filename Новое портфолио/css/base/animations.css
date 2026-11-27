@@ -10,6 +10,9 @@
 /* Hero intro (after preloader) */
 .intro { opacity: 0; transform: translateY(30px); transition: opacity 1s var(--ease), transform 1s var(--ease); transition-delay: var(--d, 0s); }
 .loaded .intro { opacity: 1; transform: none; }
+/* Slide-only intro: stays visible (under the preloader) so it can be painted early — helps LCP */
+.intro-slide { transform: translateY(30px); transition: transform 1s var(--ease); transition-delay: var(--d, 0s); }
+.loaded .intro-slide { transform: none; }
 .intro-scale { opacity: 0; transform: scale(.85); filter: blur(12px); transition: opacity 1.4s var(--ease) .3s, transform 1.6s var(--ease) .3s, filter 1.4s var(--ease) .3s; }
 .loaded .intro-scale { opacity: 1; transform: none; filter: none; }
 

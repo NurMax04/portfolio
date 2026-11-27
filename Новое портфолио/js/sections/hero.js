@@ -32,7 +32,8 @@
 
   /* ---------- Rotating word with scramble ---------- */
   const rotator = $('#rotator');
-  const rotWords = ['продают', 'впечатляют', 'работают', 'запоминаются'];
+  // The final dot is part of the word, so nothing after it moves (no layout shift / CLS)
+  const rotWords = ['продают.', 'впечатляют.', 'работают.', 'запоминаются.'];
   const glyphs = 'абвгдежзиклмнопрстуфхцчшэюя#%&*/<>{}';
   let rotIndex = 0;
 

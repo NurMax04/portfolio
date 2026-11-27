@@ -24,9 +24,8 @@
 .hero-title .char { display: inline-block; transform: translateY(115%) rotate(8deg); transition: transform 1s var(--ease); transition-delay: calc(var(--i) * .03s + .1s); }
 .hero-title .line-inner { display: inline-block; transform: translateY(115%); transition: transform 1s var(--ease) .6s; }
 .loaded .hero-title .char, .loaded .hero-title .line-inner { transform: none; }
-.rotator { color: var(--green); background: linear-gradient(90deg, var(--green), var(--green-2), var(--green)); background-size: 200% 100%; -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; animation: shine 4s linear infinite; }
+.rotator { color: var(--green); background: linear-gradient(100deg, var(--green) 20%, var(--green-2) 50%, var(--green) 80%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
 .rotator .scr { color: var(--muted); -webkit-text-fill-color: var(--muted); opacity: .8; }
-@keyframes shine { to { background-position: -200% 0; } }
 .hero-sub { max-width: 520px; font-size: clamp(16px, 1.3vw, 18px); color: var(--muted); margin-bottom: 40px; }
 .hero-cta { display: flex; gap: 14px; flex-wrap: wrap; }
 

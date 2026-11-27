@@ -3,7 +3,9 @@
    ========================================================= */
 .process { background: var(--bg-2); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .process-inner { display: grid; grid-template-columns: .8fr 1.2fr; gap: 80px; }
-.process-head { position: sticky; top: 140px; align-self: start; }
+/* overflow-anchor: none — keeps Chrome's scroll anchoring from picking the sticky
+   block, which made smooth anchor scrolls stop ~40px off target */
+.process-head { position: sticky; top: 140px; align-self: start; overflow-anchor: none; }
 .process-note { color: var(--muted); max-width: 340px; margin-top: 24px; }
 
 /* Timeline line (filled by js/sections/process.js) */

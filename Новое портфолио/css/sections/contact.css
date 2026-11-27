@@ -10,9 +10,10 @@
 .contact-top { display: grid; grid-template-columns: 1fr auto; align-items: end; gap: 40px; margin-bottom: 70px; }
 .contact-title { font-family: var(--f-head); font-weight: 800; font-size: clamp(42px, 7.4vw, 120px); line-height: 1; letter-spacing: -.045em; margin-bottom: 30px; }
 .ct-line { display: block; overflow: hidden; padding-bottom: .06em; }
-.ct-in { display: inline-block; }
-.ct-in[data-reveal] { transform: translateY(105%); opacity: 1; }
-.ct-in[data-reveal].in { transform: none; }
+/* The line is observed (it is never clipped); the text inside slides up */
+.ct-line[data-reveal] { opacity: 1; transform: none; }
+.ct-in { display: inline-block; transform: translateY(105%); transition: transform 1.1s var(--ease) var(--d, 0s); }
+.ct-line.in .ct-in { transform: none; }
 .ct-line em { font-style: normal; color: transparent; -webkit-text-stroke: 1.5px var(--green); transition: color .5s; }
 .ct-line em:hover { color: var(--green); }
 .contact-lead { max-width: 520px; color: var(--muted); font-size: 17px; margin-bottom: 26px; }
@@ -25,12 +26,14 @@
 .orb-inner { position: absolute; inset: 0; display: grid; place-items: center; }
 .orb-text { position: absolute; inset: 0; width: 100%; height: 100%; animation: spin 16s linear infinite; }
 .orb-text text { font-family: var(--f-brand); font-size: 12px; fill: var(--text); }
-.orb-core { position: relative; width: 104px; height: 104px; border-radius: 50%; background: var(--green); display: grid; place-items: center; box-shadow: 0 0 0 0 rgba(0, 214, 143, .5); transition: transform .6s var(--ease), box-shadow .6s, background .4s; animation: orbPulse 2.6s ease-out infinite; }
+.orb-core { position: relative; width: 104px; height: 104px; border-radius: 50%; background: var(--green); display: grid; place-items: center; transition: transform .6s var(--ease), background .4s; }
+/* Pulse ring — animates only transform/opacity (GPU-composited) */
+.orb-core::after { content: ''; position: absolute; inset: 0; border-radius: 50%; border: 2px solid rgba(0, 214, 143, .5); animation: orbPulse 2.6s ease-out infinite; pointer-events: none; }
 .orb-core svg { width: 34px; height: 34px; fill: none; stroke: #00140c; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; transition: transform .6s var(--ease); }
 .contact-orb:hover .orb-core { transform: scale(1.12); background: var(--text); }
 .contact-orb:hover .orb-core svg { transform: rotate(45deg); }
 .contact-orb:hover .orb-text { animation-duration: 5s; }
-@keyframes orbPulse { 0% { box-shadow: 0 0 0 0 rgba(0, 214, 143, .45); } 100% { box-shadow: 0 0 0 28px rgba(0, 214, 143, 0); } }
+@keyframes orbPulse { 0% { transform: scale(1); opacity: 1; } 100% { transform: scale(1.55); opacity: 0; } }
 
 /* ---------- Contact cards ---------- */
 .contact-cards { display: grid; grid-template-columns: 1fr 1fr 1.4fr 1fr; gap: 14px; }
